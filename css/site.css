@@ -40,9 +40,9 @@ nav {
   top: 0px;
   background-color: rgba(255,255,255,0);
   border-bottom: 1px solid rgba(255,255,255,.7);
-  margin: auto;
   left: 0;
   right: 0;
+  margin: auto;
 }
 ul {
   -webkit-padding-start: 0px;
@@ -63,6 +63,7 @@ ul li {
 }
 /*sections*/
 #intro {
+
   font-family: "Circular";
   font-weight: 500;
   height: 100vw;
@@ -70,18 +71,41 @@ ul li {
   background-color: #ea67b0;
   color: white;
 }
-#hello{
-  position: absolute;
-  font-family: "Portrait";
-  font-weight: 900;
-  font-size: 14vw;
+#introContent {
+  position: relative;
   left: 0;
   right: 0;
   margin: auto;
+  top: 24vh;
   text-align: center;
-  top: 30%;
 }
+#hello{
+  font-family: "Portrait";
+  font-weight: 900;
+  font-size: 14vw;
+  text-align: center;
+
 }
+#introContent h1 {
+  position: relative;
+  text-align: center;
+  font-size: 3.3vw;
+  -webkit-margin-before: .1em;
+  font-weight: normal;
+}
+#buyNow{
+  text-transform: uppercase;
+  font-family: "Circular";
+  font-weight: 500;
+  font-size: 2vw;
+  color: #bd4dd4;
+  letter-spacing: .2em;
+  background-color: white;
+  padding: 9px 29px;
+  border: none;
+  text-align: center;
+}
+
 #portfolio {
   height: 100vw;
   width: auto;
@@ -91,6 +115,16 @@ ul li {
   height: 100vw;
   width: auto;
   background-color: #f8fedd;
+}
+.sectionNav{
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: 59vh auto 0 auto;
+  text-align: center;
+}
+.sectionNav h2{
+  -webkit-margin-after: 0.83em;
 }
 font-family: 'Montserrat', sans-serif;
 font-family: 'Noticia Text', serif;
