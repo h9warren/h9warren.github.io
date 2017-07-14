@@ -66,7 +66,7 @@ ul li {
 
   font-family: "Circular";
   font-weight: 500;
-  height: 100vw;
+  height: 100vh;
   width: auto;
   background-color: #ea67b0;
   color: white;
@@ -107,14 +107,25 @@ ul li {
 }
 
 #portfolio {
-  height: 100vw;
+  height: 100vh;
   width: auto;
+  padding: 0 5vw;
   background-color: #bd4dd4;
 }
 #resume {
-  height: 100vw;
+  height: 100vh;
   width: auto;
   background-color: #f8fedd;
+}
+#projects p {
+  /*repeat: no-repeat;
+  position: fixed;*/
+  height: 100vh;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+#resumeGraphic p {
+  -webkit-margin-before: 0;
 }
 .sectionNav{
   position: relative;
