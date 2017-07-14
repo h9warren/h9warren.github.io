@@ -6754,4 +6754,7 @@ button.close {
     display: none !important;
   }
 }
+body{
+  background-color: gray;
+}
 /*# sourceMappingURL=bootstrap.css.map */

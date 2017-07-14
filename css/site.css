@@ -2,11 +2,12 @@ body{
   margin: 0px;
   background-color: #5e9ff7;
 }
-/*importing fonts*/
 h1 {
   font-weight: normal;
 }
-
+h2{
+    -webkit-margin-before: 0px;
+}
 @font-face {
     font-family: "Circular";
     src: url("../fonts/CircularStd-Book.otf");
@@ -32,7 +33,6 @@ h1 {
     src: url("../fonts/Portrait-Heavy.otf");
     font-weight: 900;
 }
-/*navigation*/
 nav {
   position: fixed;
   width: 90vw;
@@ -43,9 +43,11 @@ nav {
   left: 0;
   right: 0;
   margin: auto;
+  z-index: 10;
 }
 ul {
   -webkit-padding-start: 0px;
+  -webkit-padding-before: 1em;
 }
 ul li {
   list-style-type: none;
@@ -63,13 +65,14 @@ ul li {
 }
 /*sections*/
 #intro {
-
+  /*position: relative;*/
   font-family: "Circular";
   font-weight: 500;
   height: 100vh;
-  width: auto;
+  width: 100vw;
   background-color: #ea67b0;
   color: white;
+
 }
 #introContent {
   position: relative;
@@ -87,7 +90,7 @@ ul li {
 
 }
 #introContent h1 {
-  position: relative;
+  /*position: relative;*/
   text-align: center;
   font-size: 3.3vw;
   -webkit-margin-before: .1em;
@@ -107,25 +110,60 @@ ul li {
 }
 
 #portfolio {
-  height: 100vh;
+  position: relative;
+  font-family: "Circular";
+  color: white;
+  height: 100vw;
   width: auto;
-  padding: 0 5vw;
+  padding: 10vh 5vw 0 5vw;
   background-color: #bd4dd4;
 }
+#portfolio .iconTitle {
+  font-weight: 300;
+  position: relative;
+  text-align: center;
+  color: #bd4dd4;
+  top: -25px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+#portfolio .projectName{
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+#portfolio .projectDesc {
+  font-family: "Portrait";
+  font-size: 18px;
+}
+#portfolio svg {
+  opacity: .6;
+}
 #resume {
+  position: relative;
   height: 100vh;
   width: auto;
   background-color: #f8fedd;
+  z-index: 4;
+}
+#projects{
+  float: left;
 }
 #projects p {
-  /*repeat: no-repeat;
-  position: fixed;*/
-  height: 100vh;
+  text-align:center;
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
 }
 #resumeGraphic p {
   -webkit-margin-before: 0;
+}
+.singleProject{
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  padding: 20px 50px;
 }
 .sectionNav{
   position: relative;
