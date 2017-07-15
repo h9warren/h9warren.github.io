@@ -5,11 +5,15 @@
     <title></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/site.css">
+
     <link href="https://fonts.googleapis.com/css?family=Noticia+Text:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-  </head>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+  <script src="/js/jquery.onepage-scroll.js"></script>
+  <link rel="stylesheet" href="/css/onepage-scroll.css">
+  <link rel="stylesheet" href="/css/site.css">
+</head>
   <body>
     <html>
     <nav>
@@ -19,7 +23,7 @@
       <li id="resumeLink">Resumé</li>
     </ul>
     </nav>
-    <div id="allContent">
+    <div class="main">
     <section id="intro">
       <div id="introContent">
       <div id="hello">Hello!</div>
@@ -83,21 +87,38 @@
 
 
     </section>
-  </div>
     <footer>
 
     </footer>
 
-    </html>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/jquery.ScrollMagic.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TimelineMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.velocity.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.js"></script> -->
+    </div>
+    <script type="text/javascript">
+        $(".main").onepage_scroll({
+           sectionContainer: "section",     // sectionContainer accepts any kind of selector in case you don't want to use section
+           easing: "ease",                  // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in",
+                                            // "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
+           animationTime: 1000,             // AnimationTime let you define how long each section takes to animate
+           pagination: true,                // You can either show or hide the pagination. Toggle true for show, false for hide.
+           updateURL: false,                // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
+           beforeMove: function(index) {},  // This option accepts a callback function. The function will be called before the page moves.
+           afterMove: function(index) {},   // This option accepts a callback function. The function will be called after the page moves.
+           loop: false,                     // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
+           keyboard: true,                  // You can activate the keyboard controls
+           responsiveFallback: false,        // You can fallback to normal page scroll by defining the width of the browser in which
+                                            // you want the responsive fallback to be triggered. For example, set this to 600 and whenever
+                                            // the browser's width is less than 600, the fallback will kick in.
+           direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".
+        });
+    </script>
     <script src="/js/site.js"></script>
   </body>
 </html>
