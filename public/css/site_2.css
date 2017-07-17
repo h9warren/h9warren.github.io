@@ -1,0 +1,190 @@
+body{
+  margin: 0px;
+  background-color: #5e9ff7;
+}
+h1 {
+  font-weight: normal;
+}
+h2{
+    -webkit-margin-before: 0px;
+}
+a, a:active, a:visited {
+  color: white;
+  text-decoration: none;
+
+}
+a:hover {
+  color: rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+}
+@font-face {
+    font-family: "Circular";
+    src: url("../fonts/CircularStd-Book.otf");
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Circular";
+    src: url("../fonts/CircularStd-Bold.otf");
+    font-weight: 500;
+}
+@font-face {
+    font-family: "Circular";
+    src: url("../fonts/CircularStd-Black.otf");
+    font-weight: 700;
+}
+@font-face {
+    font-family: "Portrait";
+    src: url("../fonts/Portrait-Regular.otf");
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Portrait";
+    src: url("../fonts/Portrait-Heavy.otf");
+    font-weight: 900;
+}
+nav {
+  position: fixed;
+  width: 90vw;
+  height: 50px;
+  top: 0px;
+  background-color: rgba(255,255,255,0);
+  border-bottom: 1px solid rgba(255,255,255,.7);
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 10;
+}
+ul {
+  -webkit-padding-start: 0px;
+  -webkit-padding-before: 1em;
+}
+ul li {
+  list-style-type: none;
+  color: white;
+  font-family: "Circular";
+  font-weight: 300;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  display: inline;
+  font-size: 14px;
+}
+#portfolioLink, #resumeLink {
+  float: right;
+  margin-left: 50px;
+}
+/*sections*/
+#intro {
+  /*position: relative;*/
+  font-family: "Circular";
+  font-weight: 500;
+  height: 100vh;
+  width: 100vw;
+  background-color: #ea67b0;
+  color: white;
+
+}
+#introContent {
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0vh;
+  text-align: center;
+}
+#hi{
+  font-family: "Portrait";
+  font-weight: 900;
+  font-size: 14vw;
+  text-align: center;
+
+}
+#introContent h1 {
+  /*position: relative;*/
+  text-align: center;
+  font-size: 3.3vw;
+  -webkit-margin-before: .1em;
+  font-weight: normal;
+}
+#buyNow{
+  text-transform: uppercase;
+  font-family: "Circular";
+  font-weight: 500;
+  font-size: 2vw;
+  color: #bd4dd4;
+  letter-spacing: .2em;
+  background-color: white;
+  padding: 9px 29px;
+  border: none;
+  text-align: center;
+}
+
+#portfolio {
+  position: relative;
+  font-family: "Circular";
+  color: white;
+  height: 100vh;
+  width: 100vw;
+  padding: 10vh 5vw 0 5vw;
+  background-color: #bd4dd4
+}
+#portfolio .iconTitle {
+  font-weight: 300;
+  position: relative;
+  text-align: center;
+  color: #bd4dd4;
+  top: -25px;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+#portfolio .projectName{
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+#portfolio .projectDesc {
+  font-family: "Portrait";
+  font-size: 18px;
+}
+#portfolio svg {
+  opacity: .6;
+}
+#resume {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f8fedd;
+  z-index: 4;
+}
+#projects{
+  float: left;
+
+}
+
+#projects p {
+  text-align:center;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+}
+#resumeGraphic p {
+  -webkit-margin-before: 0;
+}
+.singleProject{
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  padding: 20px 50px;
+}
+.sectionNav{
+  position: relative;
+  left: 0;
+  right: 0;
+  margin: 59vh auto 0 auto;
+  text-align: center;
+}
+.sectionNav h2{
+  -webkit-margin-after: 0.83em;
+}
+font-family: 'Montserrat', sans-serif;
+font-family: 'Noticia Text', serif;
