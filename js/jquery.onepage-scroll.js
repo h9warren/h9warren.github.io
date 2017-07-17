@@ -49,13 +49,11 @@
             startX = touches[0].pageX;
             startY = touches[0].pageY;
             $this.bind('touchmove', touchmove);
-            console.log("hello")
           }
         }
 
         function touchmove(event) {
           var touches = event.originalEvent.touches;
-          console.log(event);
           if (touches && touches.length) {
             var deltaX = startX - touches[0].pageX;
             var deltaY = startY - touches[0].pageY;
@@ -82,7 +80,7 @@
     };
 
 
-  $.fn.onepage_scroll = function(options){
+  $.fn.onepage_scroll = function(options, element){
     var settings = $.extend({}, defaults, options),
         el = $(this),
         sections = $(settings.sectionContainer)
@@ -96,19 +94,19 @@
 
     $.fn.transformPage = function(settings, pos, index) {
       if (typeof settings.beforeMove == 'function') settings.beforeMove(index);
-
+      if(typeof element == "undefined") element = $(this);
       // Just a simple edit that makes use of modernizr to detect an IE8 browser and changes the transform method into
     	// an top animate so IE8 users can also use this script.
-    	if($('html').hasClass('ie8')){
+    	if($('html').hasClass('no-csstransforms3d')){
         if (settings.direction == 'horizontal') {
           var toppos = (el.width()/100)*pos;
-          $(this).animate({left: toppos+'px'},settings.animationTime);
+          element.animate({left: toppos+'px'},settings.animationTime);
         } else {
           var toppos = (el.height()/100)*pos;
-          $(this).animate({top: toppos+'px'},settings.animationTime);
+          element.animate({top: toppos+'px'},settings.animationTime);
         }
     	} else{
-    	  $(this).css({
+    	  element.css({
     	    "-webkit-transform": ( settings.direction == 'horizontal' ) ? "translate3d(" + pos + "%, 0, 0)" : "translate3d(0, " + pos + "%, 0)",
          "-webkit-transition": "all " + settings.animationTime + "ms " + settings.easing,
          "-moz-transform": ( settings.direction == 'horizontal' ) ? "translate3d(" + pos + "%, 0, 0)" : "translate3d(0, " + pos + "%, 0)",
@@ -312,11 +310,21 @@
     });
 
     el.swipeEvents().bind("swipeDown",  function(event){
-      if (!$("body").hasClass("disabled-onepage-scroll")) event.preventDefault();
-      el.moveUp();
+      var section = $("body .section.active");
+      var sectionScroll = section.scrollTop() == 0 ? true: false;
+      if (!$("body").hasClass("disabled-onepage-scroll") && section.hasClass('scrollable') && !sectionScroll) {
+        event.preventDefault();
+      }else{
+        el.moveUp();
+      }
     }).bind("swipeUp", function(event){
-      if (!$("body").hasClass("disabled-onepage-scroll")) event.preventDefault();
-      el.moveDown();
+      var section = $("body .section.active");
+      var sectionScroll = section.scrollTop() + section.innerHeight()>=section[0].scrollHeight;
+      if (!$("body").hasClass("disabled-onepage-scroll") && section.hasClass('scrollable') && !sectionScroll){
+        event.preventDefault();
+      }else{
+        el.moveDown();
+      }
     });
 
     // Create Pagination and Display Them
@@ -374,9 +382,13 @@
 
 
     $(document).bind('mousewheel DOMMouseScroll MozMousePixelScroll', function(event) {
-      event.preventDefault();
+      //event.preventDefault();
+      var section = $("body .section.active");
       var delta = event.originalEvent.wheelDelta || -event.originalEvent.detail;
-      if(!$("body").hasClass("disabled-onepage-scroll")) init_scroll(event, delta);
+      var sectionScroll = section.scrollTop() + section.innerHeight()>=section[0].scrollHeight;
+      if(delta > 0) sectionScroll = false;
+      if(section.scrollTop() == 0 && delta > 0) sectionScroll = true;
+      if(!$("body").hasClass("disabled-onepage-scroll") && !section.hasClass('scrollable') || sectionScroll) init_scroll(event, delta);
     });
 
 
