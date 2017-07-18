@@ -122,7 +122,7 @@ ul li {
   position: relative;
   font-family: "Circular";
   color: white;
-  height: 100vh;
+  height: auto;
   width: 100vw;
   padding: 10vh 5vw 0 5vw;
   background-color: #bd4dd4

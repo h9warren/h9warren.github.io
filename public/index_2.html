@@ -24,11 +24,28 @@
           scrollOverflow: true,
           scrollOverflowOptions: ({
             scrollbars: false,
-          })
+
+          }),
+          onLeave: function(index, nextIndex, direction) {
+            if (index == 1 && direction == 'down') {
+              $.fn.fullpage.setAllowScrolling(false, 'down');
+              setTimeout(function(){
+                $.fn.fullpage.setAllowScrolling(true, 'down');
+              }, 3000);
+            } else if (index == 3 && direction == 'up') {
+              $.fn.fullpage.setAllowScrolling(false, 'up');
+              setTimeout(function(){
+                $.fn.fullpage.setAllowScrolling(true, 'up');
+              }, 3000);
+            }
+
+
+
+          }
         });
         $.fn.fullpage.setScrollingSpeed(700);
-
       });
+
 
 
 
