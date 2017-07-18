@@ -21,22 +21,34 @@
         $('#fullpage').fullpage({
           anchors: ['hello','work', 'resumé'],
           menu: '#myMenu',
+          bigSectionsDestination: top,
           scrollOverflow: true,
           scrollOverflowOptions: ({
             scrollbars: false,
+            bounce: true,
+            scrollOverflowReset: true,
 
           }),
+
           onLeave: function(index, nextIndex, direction) {
-            if (index == 1 && direction == 'down') {
+            if ((index == 1 || index == 2) && direction == 'down') {
               $.fn.fullpage.setAllowScrolling(false, 'down');
               setTimeout(function(){
                 $.fn.fullpage.setAllowScrolling(true, 'down');
-              }, 3000);
-            } else if (index == 3 && direction == 'up') {
+              }, 2000);
+              if (nextIndex == 3) {
+                $("ul li a").css("color", "#bd4dd4");
+                $("nav").css("border-bottom", "1px solid rgba(189,77,212,.7)")
+              }
+            } else if ((index == 2 || index == 3) && direction == 'up') {
               $.fn.fullpage.setAllowScrolling(false, 'up');
               setTimeout(function(){
                 $.fn.fullpage.setAllowScrolling(true, 'up');
-              }, 3000);
+              }, 2000);
+              if (nextIndex == 2) {
+                $("ul li a").css("color", "white");
+                $("nav").css("border-bottom", "1px solid rgba(255,255,255,.7)")
+              }
             }
 
 
@@ -68,7 +80,7 @@
             <button id="buyNow">Buy Now</button>
         </div>
       </section>
-    <section class="section" id="portfolio" data-anchor="work">
+    <section class="section fp-auto-height" id="portfolio" data-anchor="work">
       <div class="container" id="projects">
         <div class="col-xs-11 col-sm-6 singleProject">
           <div class="icon"></div>
