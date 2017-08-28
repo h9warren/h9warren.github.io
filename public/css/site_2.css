@@ -82,7 +82,7 @@ ul li {
   background-image: url('../img/Grid.png');
   background-width: 100%;
   color: white;
-
+  cursor: default;
 }
 #introContent {
   position: relative;
@@ -126,7 +126,9 @@ ul li {
   height: 100vh;
   width: 100vw;
   padding: 10vh 5vw 5vh 5vw;
-  background-color: #bd4dd4
+  background-color: #bd4dd4;
+  /*cursor: url(/img/hand2.gif), auto;*/
+
 }
 #portfolio .iconTitle {
   font-weight: 300;
@@ -155,6 +157,7 @@ ul li {
   width: 100vw;
   background-color: #f8fedd;
   z-index: 4;
+  cursor: default;
 }
 #projects{
   float: left;
