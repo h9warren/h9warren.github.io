@@ -8,37 +8,104 @@
 
     <link href="https://fonts.googleapis.com/css?family=Noticia+Text:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.fullPage.css">
     <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
   crossorigin="anonymous"></script>
-  <script src="/js/jquery.onepage-scroll.js"></script>
-  <link rel="stylesheet" href="/css/onepage-scroll.css">
-  <link rel="stylesheet" href="/css/site.css">
+  <script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
+  <script src="js/jquery.fullPage.js"></script>
+  <script src="js/move.js"></script>
+  <link rel="stylesheet" href="css/site_2.css">
+  <script type="text/javascript">
+
+
+
+      $(document).ready(function() {
+        $('#fullpage').fullpage({
+          anchors: ['hello','work', 'resumé'],
+          menu: '#myMenu',
+          bigSectionsDestination: top,
+          scrollOverflow: true,
+          scrollOverflowOptions: ({
+            scrollbars: false,
+            bounce: true,
+
+
+          }),
+
+          onLeave: function(index, nextIndex, direction) {
+            if ((index == 1 || index == 2) && direction == 'down') {
+              $.fn.fullpage.setAllowScrolling(false, 'down');
+              setTimeout(function(){
+                $.fn.fullpage.setAllowScrolling(true, 'down');
+              }, 2000);
+              if (nextIndex == 3) {
+                $("ul li a").css("color", "#bd4dd4");
+                $("nav").css("border-bottom", "1px solid rgba(189,77,212,.7)")
+              }
+            } else if ((index == 2 || index == 3) && direction == 'up') {
+              $.fn.fullpage.setAllowScrolling(false, 'up');
+              setTimeout(function(){
+                $.fn.fullpage.setAllowScrolling(true, 'up');
+              }, 2000);
+              if (nextIndex == 2) {
+                $("ul li a").css("color", "white");
+                $("nav").css("border-bottom", "1px solid rgba(255,255,255,.7)")
+              }
+            }
+
+
+
+          }
+        });
+        // afterSlideLoad: function( anchorLink, index, slideAnchor, slideIndex){
+      	// 	// var loadedSlide = $(this);
+        //
+      	// 	//first slide of the second section
+      	// 	if (anchorLink == 'secondPage' && slideIndex == 1){
+      	// 		alert("First slide loaded");
+      	// 	}
+        //
+      	// 	//second slide of the second section (supposing #secondSlide is the
+      	// 	//anchor for the second slide
+      	// 	if(index == 2 && slideIndex == 'secondSlide'){
+      	// 		alert("Second slide loaded");
+      	// 	}
+      	// };
+        $( "#portfolio" ).hover(
+          function() {
+            $( this ).css( "cursor", "url(/img/hand2.gif), auto" );
+          }, function() {
+            $( this ).css( "cursor", "default" );
+          }
+        );
+        $.fn.fullpage.setScrollingSpeed(700);
+      });
+
+
+
+
+
+  </script>
 </head>
   <body>
     <html>
     <nav>
-    <ul>
-      <li id="sayHello">Say Hello!</li>
-      <li id="portfolioLink">Portfolio</li>
-      <li id="resumeLink">Resumé</li>
+    <ul id="myMenu">
+      <li data-menuanchor="hello" id="sayHello"><a href="#hello">Home</a></li>
+      <li data-menuanchor="resumé" id="resumeLink"><a href="#resumé">Resumé</a></li>
+      <li data-menuanchor="work" id="portfolioLink"><a href="#work">Portfolio</a></li>
     </ul>
     </nav>
-    <div class="main">
-    <section id="intro">
-      <div id="introContent">
-      <div id="hello">Hello!</div>
-      <h1>I’m front-end developer, Hunter Warren.</h1>
-      <button id="buyNow">Buy Now</button>
-    </div>
-    <!-- <div class="sectionNav">
-      <h2>Work</h2>
-      <svg width="22px">
-        <polygon points="22.6,0 11.3,11.3 0,0 " style="fill:white" />
-      </svg>
-    </div> -->
-    </section>
-    <section class="scrollable" id="portfolio">
-      <div class="container" id="projects">
+    <div id="fullpage">
+      <section class="section" id="intro" data-anchor="hello">
+        <div id="introContent">
+          <div id="hi">Hello!</div>
+            <h1>I’m front-end developer, Hunter Warren.</h1>
+            <button id="buyNow">Buy Now</button>
+        </div>
+      </section>
+    <section class="section fp-auto-height" id="portfolio" data-anchor="work">
+      <div class="container slide" id="projects">
         <div class="col-xs-11 col-sm-6 singleProject">
           <div class="icon"></div>
           <p class="iconTitle">Lorem Ipsum</p>
@@ -75,14 +142,21 @@
           <h2 class="projectName">Lorem Ipsum</h2>
           <p class="projectDesc"> Here's where the projects go</p>
         </div>
+
+      	<div class="slide"> Project 1 </div>
+      	<div class="slide"> Project 2 </div>
+      	<div class="slide"> Project 3 </div>
+      	<div class="slide"> Project 4 </div>
+      	<div class="slide"> Project 5 </div>
+      	<div class="slide"> Project 6 </div>
 
       </div>
 
 
     </section>
-    <section id = "resume">
+    <section class="section" id="resume" data-anchor="resumé">
       <div id="resumeGraphic">
-        <p> Here's where the projects go</p>
+        <p></p>
       </div>
 
 
@@ -91,34 +165,7 @@
 
     </footer>
 
-
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/jquery.ScrollMagic.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TimelineMax.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.velocity.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.js"></script> -->
-    </div>
-    <script type="text/javascript">
-        $(".main").onepage_scroll({
-           sectionContainer: "section",     // sectionContainer accepts any kind of selector in case you don't want to use section
-           easing: "ease",                  // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in",
-                                            // "ease-out", "ease-in-out", or even cubic bezier value such as "cubic-bezier(0.175, 0.885, 0.420, 1.310)"
-           animationTime: 1000,             // AnimationTime let you define how long each section takes to animate
-           pagination: true,                // You can either show or hide the pagination. Toggle true for show, false for hide.
-           updateURL: false,                // Toggle this true if you want the URL to be updated automatically when the user scroll to each page.
-           beforeMove: function(index) {},  // This option accepts a callback function. The function will be called before the page moves.
-           afterMove: function(index) {},   // This option accepts a callback function. The function will be called after the page moves.
-           loop: false,                     // You can have the page loop back to the top/bottom when the user navigates at up/down on the first/last page.
-           keyboard: true,                  // You can activate the keyboard controls
-           responsiveFallback: false,        // You can fallback to normal page scroll by defining the width of the browser in which
-                                            // you want the responsive fallback to be triggered. For example, set this to 600 and whenever
-                                            // the browser's width is less than 600, the fallback will kick in.
-           direction: "vertical"            // You can now define the direction of the One Page Scroll animation. Options available are "vertical" and "horizontal". The default value is "vertical".
-        });
-    </script>
-    <script src="/js/site.js"></script>
+    <script src="/js/jquery.backgroundMove.js"></script>
+    <script src="/js/svg.js"></script>
   </body>
 </html>

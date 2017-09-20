@@ -3,6 +3,7 @@
 * License MIT
 $('element').backgroundMove();
 */
+
 (function($){
     $.fn.backgroundMove=function(options){
             var defaults={
@@ -29,6 +30,13 @@ $('element').backgroundMove();
 $('#intro').backgroundMove({
   movementStrength:'25'
 });
+
+// (function () {
+//   setTimeout( function () {
+//     $(''background-position-y:
+//   }, )
+// }());
+
 
 
 
