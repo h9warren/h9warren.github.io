@@ -27,7 +27,7 @@ $('element').backgroundMove();
         }
 })(jQuery);
 
-$('#intro').backgroundMove({
+$('#backgroundPhoto').backgroundMove({
   movementStrength:'25'
 });
 

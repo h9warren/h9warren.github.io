@@ -1,3 +1,3 @@
-$('#intro').backgroundMove({
+$('#backgroundPhoto').backgroundMove({
   movementStrength:'50'
 });

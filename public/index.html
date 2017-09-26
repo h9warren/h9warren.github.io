@@ -100,12 +100,24 @@
     </nav>
     <div id="fullpage">
       <section class="section" id="intro" data-anchor="hello">
-        <div id="introContent">
-          <div id="hi">Hello!</div>
-            <h1>I’m front-end developer, Hunter Warren.</h1>
-            <button id="buyNow">Buy Now</button>
+        <div id="backgroundPhoto" class="MainContainer">
+          <div id="introContent">
+            <div id="hi">Hello!</div>
+              <h1>I’m front-end developer, Hunter Warren.</h1>
+              <button id="buyNow">Buy Now</button>
+          </div>
         </div>
+        <div id="myModal" class="Modal is-hidden is-visuallyHidden">
+          <!-- Modal content -->
+          <div class="Modal-content">
+            <span id="closeModal" class="Close">&times;</span>
+            <p>Simple Modal</p>
+          </div>
+        </div>
+
+            
       </section>
+
       <section class="section" id="portfolio">
         <h1 style="text-align:center">COMING SOON!</h1>
       </section>
@@ -174,7 +186,7 @@
             <button class="resumeButton">Download</button>
           </div>
         </div>
-        <div class="resume col-md-4 col-s-12">
+        <div class="resume col-md-4 col-xs-12">
           <h3>Education</h3>
           <p>June-September 2017</p>
           <h5>Codeup</h5>
@@ -183,7 +195,7 @@
           <h5>Texas State University</h5>
           <p>San Marcos, TX. BFA Communication Design.</p>
         </div>
-        <div class="resume col-md-4 col-s-12">
+        <div class="resume col-md-4 col-xs-12">
           <h3 style="margin-bottom:.5em">Skills</h3>
           <h5>Programming</h5>
           <ul><li>PHP / Laravel</li>
@@ -203,7 +215,7 @@
               <li>Familiar with giving / receiving constructive feedback, and team collaboration</li>
           </ul>
         </div>
-        <div class="resume col-md-4 col-s-12">
+        <div class="resume col-md-4 col-xs-12">
           <h3>Previous Experience</h3>
           <p>2017-2014</p>
           <h5>Art Director at DDB New York</h5>
@@ -229,8 +241,50 @@
         <h2 style="height: 50%"><a href="#">Contact Me</a></h2>
       </div>
     </section>
-
+  </div>
     <script src="/js/jquery.backgroundMove.js"></script>
     <script src="/js/svg.js"></script>
+    <script>
+              // Get the modal
+        var modal = document.getElementById('myModal');
+
+        // Get the main container and the body
+        var body = document.getElementsByTagName('body');
+        var container = document.getElementById('backgroundPhoto');
+
+        // Get the open button
+        var btnOpen = document.getElementById("buyNow");
+
+        // Get the close button
+        var btnClose = document.getElementById("closeModal");
+
+        // Open the modal
+        btnOpen.onclick = function() {
+            modal.className = "Modal is-visuallyHidden";
+            setTimeout(function() {
+              container.className = "MainContainer is-blurred";
+              modal.className = "Modal";
+            }, 100);
+            container.parentElement.className = "ModalOpen";
+        }
+
+        // Close the modal
+        btnClose.onclick = function() {
+            modal.className = "Modal is-hidden is-visuallyHidden";
+            body.className = "";
+            container.className = "MainContainer";
+            container.parentElement.className = "";
+        }
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.className = "Modal is-hidden";
+                body.className = "";
+                container.className = "MainContainer";
+                container.parentElement.className = "";
+            }
+        }
+    </script>
   </body>
 </html>
