@@ -58,7 +58,7 @@ ul {
   -webkit-padding-start: 0px;
   -webkit-padding-before: 1em;
 }
-ul li {
+nav ul li {
   list-style-type: none;
   color: white;
   font-family: "Circular";
@@ -155,6 +155,7 @@ ul li {
   position: relative;
   height: 100vh;
   width: 100vw;
+  padding: 5vh 5vw 10vh 5vw; 
   background-color: #f8fedd;
   z-index: 4;
   cursor: default;
@@ -172,6 +173,7 @@ ul li {
 #resumeGraphic p {
   -webkit-margin-before: 0;
 }
+
 .singleProject{
   position: relative;
   left: 0;
@@ -190,5 +192,56 @@ ul li {
 .sectionNav h2{
   -webkit-margin-after: 0.83em;
 }
+.resume {
+  font-family: "Circular";
+  font-weight: 300;
+}
+.resume h5, .resume p {
+  color:#bb53d1;
+}
+.resume ul li {
+  color:#bb53d1;
+}
+#resume .fp-scrollable {
+  overflow: visible;
+}
+#downloadHere{
+    font-family: "Circular";
+    text-align: center;
+    border-bottom: 1px solid #bb53d1;
+    padding-bottom: 2em;
+}
+.resume h5 {
+  margin-bottom:0px;
+  color:#b41ed5;
+}
+.resume ul {
+  padding-top:4px;
+  padding-left: 40px;
+  list-style-position: outside;
+  list-style-type: circle;
+}
+.resumeButton {
+    height: 3em;
+    width: 13em;
+    background-color: #bb53d1;
+    border: none;
+    border-radius: 2em;
+    color: white;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+}
+#footer {
+  background-color: #bb53d1;
+  font-family: "Circular";
+  color: white;
+  text-align:center;
+}
+.fp-auto-height.fp-section, .fp-auto-height .fp-slide, .fp-auto-height .fp-tableCell {
+    height: 100px !important;
+}
+
 font-family: 'Montserrat', sans-serif;
 font-family: 'Noticia Text', serif;
+}

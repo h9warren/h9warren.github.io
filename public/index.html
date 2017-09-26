@@ -23,11 +23,13 @@
         $('#fullpage').fullpage({
           anchors: ['hello','work', 'resumé'],
           menu: '#myMenu',
-          bigSectionsDestination: top,
+          bigSectionsDestination: 'null',
           scrollOverflow: true,
           scrollOverflowOptions: ({
             scrollbars: false,
             bounce: true,
+          fixedElements:
+            '#resumeSection',
 
 
           }),
@@ -104,13 +106,16 @@
             <button id="buyNow">Buy Now</button>
         </div>
       </section>
-    <section class="section fp-auto-height" id="portfolio" data-anchor="work">
+      <section class="section" id="portfolio">
+        <h1 style="text-align:center">COMING SOON!</h1>
+      </section>
+<!--     <section class="section fp-auto-height" id="portfolio" data-anchor="work">
       <div class="container slide" id="projects">
         <div class="col-xs-11 col-sm-6 singleProject">
           <div class="icon"></div>
-          <p class="iconTitle">Lorem Ipsum</p>
-          <h2 class="projectName">Lorem Ipsum</h2>
-          <p class="projectDesc"> Here's where the projects go</p>
+          <p class="iconTitle">Globetrotter</p>
+          <h2 class="projectName">Globetrotter.pro</h2>
+          <p class="projectDesc">Web-based travel budgeting application</p>
         </div>
         <div class="col-xs-11 col-sm-6 singleProject">
           <div class="icon"></div>
@@ -143,9 +148,9 @@
           <p class="projectDesc"> Here's where the projects go</p>
         </div>
 
-      	<div class="slide"> Project 1 </div>
-      	<div class="slide"> Project 2 </div>
-      	<div class="slide"> Project 3 </div>
+      	<div id="globetrotter" class="slide">Globetrotter</div>
+      	<div class="slide">Reddit.dev</div>
+      	<div class="slide">OldLister</div>
       	<div class="slide"> Project 4 </div>
       	<div class="slide"> Project 5 </div>
       	<div class="slide"> Project 6 </div>
@@ -153,17 +158,78 @@
       </div>
 
 
-    </section>
+    </section> -->
     <section class="section" id="resume" data-anchor="resumé">
-      <div id="resumeGraphic">
-        <p></p>
+
+      <div class="row">
+<!--       <div class="resume col-md-6 col-md-offset-3">
+        <h2>About Me</h2>
+        <h4>I’m a PHP / JavaScript full-stack web developer transitioning to programming after 7+ years experience as an Advertising Art Director /Designer. What excites me about programming is the potential to make people’s lives easier and better through technology, and provide them with value they never expected. Currently working on a multiple crypto-to-fiat currency converter to gain better understanding of available crypto APIs.</h4>
+      </div> -->
+      </div>
+      <div id="resumeSection" class="row">
+        <div class="col-xs-12">
+          <div id="downloadHere">
+            <h2>Download full resumé here:</h2>
+            <button class="resumeButton">Download</button>
+          </div>
+        </div>
+        <div class="section">
+        <div class="resume col-md-4 col-xs-12">
+          <h3>Education</h3>
+          <p>June-September 2017</p>
+          <h5>Codeup</h5>
+          <p>Completed 16-week software development immersive in San Antonio, consisting of  536+ hours of curriculum covering full-stack web development and associated technologies. Built various programming projects alone and in teams.</p>
+          <p>2007-2010</p>
+          <h5>Texas State University</h5>
+          <p>San Marcos, TX. BFA Communication Design.</p>
+        </div>
+        <div class="resume col-md-4 col-xs-12">
+          <h3 style="margin-bottom:.5em">Skills</h3>
+          <h5>Programming</h5>
+          <ul><li>PHP / Laravel</li>
+              <li>MySQL</li>
+              <li>JavaScript / jQuery  / AJAX</li>
+              <li>Custom CSS / Bootstrap</li>
+              <li>HTML</li>
+          </ul>
+          <h5>Software</h5>
+          <ul><li>Photoshop, Illustrator, inDesign, After Effects, Premiere, Audition</li>
+              <li>Excel, Google Sheets</li>
+              <li>Powerpoint, Keynote</li>
+          </ul>
+          <h5>Professional / Interpersonal</h5>
+          <ul><li>Visual design and mass communication sensibilites</li>
+              <li>Presentation experience</li>
+              <li>Familiar with giving / receiving constructive feedback, and team collaboration</li>
+          </ul>
+        </div>
+        <div class="resume col-md-4 col-xs-12">
+          <h3>Previous Experience</h3>
+          <p>2017-2014</p>
+          <h5>Art Director at DDB New York</h5>
+          <p>Digital, Social, Video and 360 advertising campaign work for Clean & Clear, State Farm, Frigidaire, Electrolux, Lipton, Breyers, Exxon Mobil, and Royal Canin. Also responsible for digital content creation / content optimization.
+          </p>
+          <p>2014-2012</p>
+          <h5>Interactive Designer at DDB New York</h5>
+          <p>Design work and UI /UX on mobile and desktop sites, and digital ads for: Frigidaire, Electrolux, State Farm, Reebok, USTA, RoC Skin Care, Aveeno, Lipton. Worked with developers to guide translation from design into digital product.
+          </p>
+          <p>2012-2011</p>
+          <h5>Graphic Designer at Imagemme, Inc.</h5>
+          <p>Created logos, identity work, websites, UI/UX, packaging, digital work and print materials.
+          Additional duties: customer contact/relations, print/materials sourcing, creating mockups, on-site installations, and press checks.
+          </p>
+        </div>
+      </div>
       </div>
 
 
     </section>
-    <footer>
-
-    </footer>
+    <section id="footer" class="section fp-auto-height">
+      <div>
+        <h2 style="height: 50%"><a href="#">Contact Me</a></h2>
+      </div>
+    </section>
 
     <script src="/js/jquery.backgroundMove.js"></script>
     <script src="/js/svg.js"></script>
