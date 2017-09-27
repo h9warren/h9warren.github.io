@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -13,7 +14,7 @@
   crossorigin="anonymous"></script>
   <script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>
   <script src="js/jquery.fullPage.js"></script>
-  <script src="js/move.js"></script>
+  <!-- <script src="js/move.js"></script> -->
   <link rel="stylesheet" href="css/site_2.css">
   <script type="text/javascript">
 
@@ -103,6 +104,7 @@
         <div id="backgroundPhoto" class="MainContainer">
           <div id="introContent">
             <div id="hi">Hello!</div>
+            <?php echo("Hi there duh, I'm Hunter"); ?>
               <h1>I’m front-end developer, Hunter Warren.</h1>
               <button id="buyNow">Buy Now</button>
           </div>
@@ -111,7 +113,12 @@
           <!-- Modal content -->
           <div class="Modal-content">
             <span id="closeModal" class="Close">&times;</span>
-            <p>Simple Modal</p>
+            <h2>Contact Me</h2>
+            <form method="POST" action="mailto:hunter.warren@gmail.com">
+                <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-zA-Z]$">
+
+
+            </form>
           </div>
         </div>
 
@@ -238,7 +245,7 @@
     </section>
     <section id="footer" class="section fp-auto-height">
       <div>
-        <h2 style="height: 50%"><a href="#">Contact Me</a></h2>
+        <h2 id="contactMe"><a>Contact Me</a></h2>
       </div>
     </section>
   </div>
@@ -285,6 +292,16 @@
                 container.parentElement.className = "";
             }
         }
+    </script>
+    <script>
+      $(document).ready(function() {
+
+        $('#contactMe').onclick(function (){
+          $('nav ul li').css("color","white");
+          console.log("hello");
+        });
+
+      });
     </script>
   </body>
 </html>

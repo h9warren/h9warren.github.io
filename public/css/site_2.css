@@ -261,12 +261,12 @@ nav ul li {
 }
 
 .Modal-content {
-  background-color: #fefefe;
+  background-color: #bb53d1;
   margin: auto;
   padding: 20px;
-  border-radius: 4px;
-  max-width: 300px;
-  height: 450px;
+  border-radius: 0px;
+  max-width: 65vw;
+  height: 70vh;
 }
 
 .ModalOpen { overflow: hidden; }
@@ -276,19 +276,23 @@ nav ul li {
 .is-visuallyHidden { opacity: 0; }
 
 .Close {
-  color: #aaaaaa;
+  color: #FFF;
   float: right;
-  font-size: 16px;
+  font-size: 2em;
+  font-weight: 300;
 }
 
 .Close:hover, .Close:focus {
-  color: #000;
+  color: #FFF;
   text-decoration: none;
   cursor: pointer;
 }
 .is-blurred {
   filter: blur(2px);
   -webkit-filter: blur(2px);
+}
+#emailForm input {
+  color:black;
 }
 
 font-family: 'Montserrat', sans-serif;
