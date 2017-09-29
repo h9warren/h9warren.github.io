@@ -1,77 +1,4 @@
-<?php
-/**
- * PHPMailer simple contact form example.
- * If you want to accept and send uploads in your form, look at the send_file_upload example.
- */
-//Import the PHPMailer class into the global namespace
-use PHPMailer\PHPMailer\PHPMailer;
-require '../vendor/autoload.php';
-if (array_key_exists('to', $_POST)) {
-    $err = false;
-    $msg = '';
-    $email = '';
-    //Apply some basic validation and filtering to the subject
-    if (array_key_exists('subject', $_POST)) {
-        $subject = substr(strip_tags($_POST['subject']), 0, 255);
-    } else {
-        $subject = 'No subject given';
-    }
-    //Apply some basic validation and filtering to the query
-    if (array_key_exists('query', $_POST)) {
-        //Limit length and strip HTML tags
-        $query = substr(strip_tags($_POST['query']), 0, 16384);
-    } else {
-        $query = '';
-        $msg = 'No query provided!';
-        $err = true;
-    }
-    //Apply some basic validation and filtering to the name
-    if (array_key_exists('name', $_POST)) {
-        //Limit length and strip HTML tags
-        $name = substr(strip_tags($_POST['name']), 0, 255);
-    } else {
-        $name = '';
-    }
-    //Validate to address
-    //Never allow arbitrary input for the 'to' address as it will turn your form into a spam gateway!
-    //Substitute appropriate addresses from your own domain, or simply use a single, fixed address
-    // if (array_key_exists('to', $_POST) and in_array($_POST['to'], ['sales', 'support', 'accounts'])) {
-    //     $to = $_POST['to'] . '@example.com';
-    // } else {
-    //     $to = 'support@example.com';
 
-
-        $to = 'hunter.warren@gmail.com';
-    // }
-    //Make sure the address they provided is valid before trying to use it
-    if (array_key_exists('email', $_POST) and PHPMailer::validateAddress($_POST['email'])) {
-        $email = $_POST['email'];
-    } else {
-        $msg .= "Error: invalid email address provided";
-        $err = true;
-    }
-    if (!$err) {
-        $mail = new PHPMailer;
-        $mail->isSMTP();
-        $mail->Host = 'localhost';
-        $mail->Port = 2500;
-        $mail->CharSet = 'utf-8';
-        //It's important not to use the submitter's address as the from address as it's forgery,
-        //which will cause your messages to fail SPF checks.
-        //Use an address in your own domain as the from address, put the submitter's address in a reply-to
-        $mail->setFrom('hunter.warren@hunterwarren.us', (empty($name) ? 'Contact form' : $name));
-        $mail->addAddress($to);
-        $mail->addReplyTo($email, $name);
-        $mail->Subject = 'Contact form: ' . $subject;
-        $mail->Body = "Contact form submission\n\n" . $query;
-        if (!$mail->send()) {
-            $msg .= "Mailer Error: " . $mail->ErrorInfo;
-        } else {
-            $msg .= "Message sent!";
-        }
-
-    }
-} ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -90,8 +17,6 @@ if (array_key_exists('to', $_POST)) {
   <!-- <script src="js/move.js"></script> -->
   <link rel="stylesheet" href="css/site_2.css">
   <script type="text/javascript">
-
-
 
       $(document).ready(function() {
         $('#fullpage').fullpage({
@@ -130,23 +55,9 @@ if (array_key_exists('to', $_POST)) {
             }
 
 
-
           }
         });
-        // afterSlideLoad: function( anchorLink, index, slideAnchor, slideIndex){
-      	// 	// var loadedSlide = $(this);
-        //
-      	// 	//first slide of the second section
-      	// 	if (anchorLink == 'secondPage' && slideIndex == 1){
-      	// 		alert("First slide loaded");
-      	// 	}
-        //
-      	// 	//second slide of the second section (supposing #secondSlide is the
-      	// 	//anchor for the second slide
-      	// 	if(index == 2 && slideIndex == 'secondSlide'){
-      	// 		alert("Second slide loaded");
-      	// 	}
-      	// };
+
         $( "#portfolio" ).hover(
           function() {
             $( this ).css( "cursor", "url(/img/hand2.gif), auto" );
@@ -187,24 +98,15 @@ if (array_key_exists('to', $_POST)) {
             <span id="closeModal" class="Close">&times;</span>
             <h2>Contact Me</h2>
             
-            <?php if (empty($msg)) { ?>
-              <form id="emailForm" action="#hello" method="POST">
-              <!-- <label for="to">Send to:</label>
-              <select name="to" id="to">
-              <option value="sales">Sales</option>
-              <option value="support" selected="selected">Support</option>
-              <option value="accounts">Accounts</option>
-              </select><br> -->
-  <!--             <label for="subject">Subject: <input type="text" name="subject" id="subject" maxlength="255"></label><br> -->
+  
+              <form id="emailForm" action="email.php" method="POST">
               <label for="name">Your name: <input type="text" name="name" id="name" maxlength="255"></label><br>
               <label for="email">Your email address: <input type="email" name="email" id="email" maxlength="255"></label><br>
               <label for="query">Let's talk!</label><br>
               <textarea cols="30" rows="8" name="query" id="query" placeholder="Enter your message here"></textarea><br>
               <input type="submit" value="Submit">
               </form>
-            <?php } else {
-                echo $msg;
-            } ?>
+
             
 
 
