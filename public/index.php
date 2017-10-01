@@ -99,8 +99,10 @@
             <span id="closeModal" class="Close">&times;</span>
             <!-- <h2 style="display:none">Contact Me</h2> -->
             
-              <div id="thankYou" style="display:none">Thanks! I'll be in touch shortly.</div>
               <div style="padding-top:20px">
+              <div id="thankYou" style="display:none">
+                <h2>Thanks! I'll be in touch shortly.</h2>
+              </div>
               <form id="emailForm" action="" method="POST"  accept-charset="utf-8" enctype="multipart/form-data">
 
               <label for="name">Your name: </label><input type="text" name="name" id="name" maxlength="255">
@@ -267,9 +269,11 @@
         // Open the modal
         btnOpen.onclick = function() {
             modal.className = "Modal is-visuallyHidden";
+            $("#emailForm")[0].reset();
             $('.Modal-content').css('opacity', 1);
             $('#thankYou').css('display','none');
             $('#emailForm').css('display','inline');
+            $('.closeBox').css('opacity', 1);
             setTimeout(function() {
               container.className = "MainContainer is-blurred";
               modal.className = "Modal";
@@ -312,7 +316,9 @@
           e.preventDefault(); // Prevent Default Submission
           
           function afterForm() {
+            $('#closeModal').css('display','none');
             $('#thankYou').fadeIn('fast').css("display", "inline");
+            $('#thankYou h2').css('margin-top', '170px');
           };
           function closeBox() {
           
@@ -339,17 +345,15 @@
               dataType: 'html'
           })
           .done(function(data){
-           $('#emailForm').fadeOut(300, function(){
-
-                  setTimeout(afterForm, 2000);  
-                  setTimeout(closeBox, 4000);  
-
-
+           $('#emailForm').fadeOut('fast', function() {
+            afterForm();  
+            setTimeout(closeBox, 1500);  
 
             });
+
           })
           .fail(function(){
-       alert('Ajax Submit Failed ...'); 
+          alert('Email couldn\'t be sent'); 
           });
       });
 </script>

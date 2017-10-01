@@ -336,12 +336,17 @@ nav ul li {
     font-size: 1.1em;
 }
 #emailForm textarea::placeholder {
-  color:#521061;
+  color:#d689e7;
 }
 #emailForm input:-webkit-autofill {
     -webkit-box-shadow: 0 0 0px 1000px #9a39af inset;
     -webkit-text-fill-color: white !important;
 }
+#thankYou {
+  text-align:center;
+  display:table;
+}
+
 
 font-family: 'Montserrat', sans-serif;
 font-family: 'Noticia Text', serif;
