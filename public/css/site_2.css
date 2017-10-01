@@ -13,6 +13,9 @@ a, a:active, a:visited {
   text-decoration: none;
 
 }
+*:focus {
+    outline: none;
+}
 a:hover {
   color: rgba(255, 255, 255, 0.3);
   text-decoration: none;
@@ -265,8 +268,8 @@ nav ul li {
   margin: auto;
   padding: 20px;
   border-radius: 0px;
-  max-width: 65vw;
-  height: 70vh;
+  max-width: 500px;
+  height: 480px;
 }
 
 .ModalOpen { overflow: hidden; }
@@ -288,11 +291,56 @@ nav ul li {
   cursor: pointer;
 }
 .is-blurred {
-  filter: blur(2px);
-  -webkit-filter: blur(2px);
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+}
+#closeModal {
+  margin-top: -20px;
+  font-size: 4em;
+  font-weight: 300  
+}
+#emailForm {
+  /*padding: 100px;*/
 }
 #emailForm input {
-  color:black;
+    border: none;
+    height: 2.2em;
+    width: 50%;
+    background-color: #9a39af;
+    color: white;
+    font-weight: 300;
+    margin-bottom: 10px;
+    padding-left: 5px;
+    letter-spacing: .03em;
+    font-size: 1.1em;
+}
+#emailForm label {
+    display: block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    letter-spacing: .03em;        
+    font-weight: 200;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+}
+#emailForm textarea {
+    width: inherit;
+    border: none;
+    resize: none;
+    height: 13.2em;
+    background-color: #9a39af;
+    color: white;
+    font-weight: 300;
+    padding: 5px;
+    letter-spacing: .03em;
+    font-size: 1.1em;
+}
+#emailForm textarea::placeholder {
+  color:#521061;
+}
+#emailForm input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #9a39af inset;
+    -webkit-text-fill-color: white !important;
 }
 
 font-family: 'Montserrat', sans-serif;

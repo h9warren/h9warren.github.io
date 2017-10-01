@@ -1,43 +1,9 @@
 <?php
 
-// use PHPMailer\PHPMailer\PHPMailer;
-// require '../vendor/phpmailer/phpmailer/src/SMTP.php'; 
-// require '../vendor/autoload.php';
-
-// $mail = new PHPMailer;
-// $mail->isSMTP();
-// $mail->SMTPSecure = 'ssl';
-// $mail->Host = 'smtp.gmail.com';
-// $mail->SMTPDebug = 2;
-
-
-// $mail->SMTPAuth = true;  
-// $mail->Port = 465;
-// $mail->CharSet = 'utf-8';
-
-// $mail->Password = "72dDR_*L-z";
-// $mail->setFrom('hunter.warren@hunterwarren.us', 'Yet Another name');
-// $mail->addAddress('hunter.warren@gmail.com', 'My Friend');
-
-// $mail->Body     = 'Hi! This is my first e-mail sent through PHPMailer.';
-// if(!$mail->send()) {
-//   echo 'Message was not sent.';
-//   echo 'Mailer error: ' . $mail->ErrorInfo;
-// } else {
-//   echo 'Message has been sent.';
-// }
-
-/**
- * PHPMailer simple contact form example.
- * If you want to accept and send uploads in your form, look at the send_file_upload example.
- */
-//Import the PHPMailer class into the global namespace
 use PHPMailer\PHPMailer\PHPMailer;
 require '../vendor/autoload.php';
 require '../vendor/phpmailer/phpmailer/src/SMTP.php'; 
 
-
-echo('hello');
 $_POST['to'] = 'hunter.warren@gmail.com';
 $to = $_POST['to'];
 
@@ -89,7 +55,7 @@ if (array_key_exists('to', $_POST)) {
         $mail->SMTPSecure = 'ssl';
         $mail->Host = 'smtp.gmail.com';
         $mail->SMTPDebug = 2;
-        echo("no error");
+        // echo("no error");
         // $mail->Host = gethostbyname('smtp.gmail.com');
 
         $mail->SMTPAuth = true;  
@@ -110,7 +76,7 @@ if (array_key_exists('to', $_POST)) {
         } else {
             echo $msg .= "Message sent!";
         }
-        header('Location:http://hunterwarren.us');
+        // header('Location:http://hunterwarren.us');
         exit;
 
     }

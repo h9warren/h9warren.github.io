@@ -94,18 +94,25 @@
         </div>
         <div id="myModal" class="Modal is-hidden is-visuallyHidden">
           <!-- Modal content -->
+          <div class="container">
           <div class="Modal-content">
             <span id="closeModal" class="Close">&times;</span>
-            <h2>Contact Me</h2>
+            <!-- <h2 style="display:none">Contact Me</h2> -->
             
-  
-              <form id="emailForm" action="email.php" method="POST">
-              <label for="name">Your name: <input type="text" name="name" id="name" maxlength="255"></label><br>
-              <label for="email">Your email address: <input type="email" name="email" id="email" maxlength="255"></label><br>
-              <label for="query">Let's talk!</label><br>
-              <textarea cols="30" rows="8" name="query" id="query" placeholder="Enter your message here"></textarea><br>
+              <div id="thankYou" style="display:none">Thanks! I'll be in touch shortly.</div>
+              <div style="padding-top:20px">
+              <form id="emailForm" action="" method="POST"  accept-charset="utf-8" enctype="multipart/form-data">
+
+              <label for="name">Your name: </label><input type="text" name="name" id="name" maxlength="255">
+              <label for="email">Your email address: </label><input type="email" name="email" id="email" maxlength="255">
+              <label for="query">Let's talk!</label>
+              <div style="width: 100%;">
+              <textarea name="query" id="query" placeholder="Enter your message here"></textarea>
+              </div>
+              <br>
               <input type="submit" value="Submit">
               </form>
+              </div>
 
             
 
@@ -260,6 +267,9 @@
         // Open the modal
         btnOpen.onclick = function() {
             modal.className = "Modal is-visuallyHidden";
+            $('.Modal-content').css('opacity', 1);
+            $('#thankYou').css('display','none');
+            $('#emailForm').css('display','inline');
             setTimeout(function() {
               container.className = "MainContainer is-blurred";
               modal.className = "Modal";
@@ -295,5 +305,53 @@
 
       });
     </script>
+    <script>
+
+      $('#emailForm').submit(function(e) {
+
+          e.preventDefault(); // Prevent Default Submission
+          
+          function afterForm() {
+            $('#thankYou').fadeIn('fast').css("display", "inline");
+          };
+          function closeBox() {
+          
+              $('#myModal').css('background-color', 'rgba(0, 0, 0, 0.0)');         
+              $('.Modal-content').animate({
+                'opacity':0
+              },300)       
+                   
+              setTimeout(function() {
+              var modal = document.getElementById('myModal');
+              modal.className = "Modal is-hidden is-visuallyHidden";
+              var container = document.getElementById('backgroundPhoto');
+              container.className = "MainContainer";
+              },300)
+
+            };
+        
+          
+        
+          $.ajax({
+       url: 'email.php',
+       type: 'POST',
+       data: $(this).serialize(), // it will serialize the form data
+              dataType: 'html'
+          })
+          .done(function(data){
+           $('#emailForm').fadeOut(300, function(){
+
+                  setTimeout(afterForm, 2000);  
+                  setTimeout(closeBox, 4000);  
+
+
+
+            });
+          })
+          .fail(function(){
+       alert('Ajax Submit Failed ...'); 
+          });
+      });
+</script>
   </body>
 </html>
