@@ -104,7 +104,7 @@
               </div>
               <form id="emailForm" action="" method="POST"  accept-charset="utf-8" enctype="multipart/form-data">
 
-              <label for="name">Your name: </label><input type="text" name="name" id="name" maxlength="255">
+              <label for="name">Your name: </label><input type="text" name="name" id="name" maxlength="255" autofocus>
               <label for="email">Your email address: </label><input type="email" name="email" id="email" maxlength="255">
               <label for="query">Let's talk!</label>
               <div style="width: 100%;">
