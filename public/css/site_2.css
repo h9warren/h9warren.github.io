@@ -101,22 +101,23 @@ nav ul li {
 #hi{
   font-family: "Portrait";
   font-weight: 900;
-  font-size: 14vw;
+  font-size: 14em;
   text-align: center;
+  line-height: .8em;
 
 }
 #introContent h1 {
   /*position: relative;*/
   text-align: center;
-  font-size: 3.3vw;
-  -webkit-margin-before: .1em;
+  font-size: 3.3em;
+  -webkit-margin-after: .6em;
   font-weight: normal;
 }
 #buyNow{
   text-transform: uppercase;
   font-family: "Circular";
   font-weight: 500;
-  font-size: 2vw;
+  font-size: 2em;
   color: #bd4dd4;
   letter-spacing: .2em;
   background-color: white;
@@ -260,8 +261,7 @@ nav ul li {
 
 }
     
- 
-.fp-auto-height.fp-section, .fp-auto-height .fp-slide, .fp-auto-height .fp-tableCell {
+ .fp-auto-height.fp-section, .fp-auto-height .fp-slide, .fp-auto-height .fp-tableCell {
     height: 100px !important;
 }
 .Modal {
@@ -363,7 +363,40 @@ nav ul li {
   text-align:center;
   display:table;
 }
+@media screen and (max-width: 900px) {
+  #hi{ font-size: 12em; }
+  #introContent h1 { font-size: 2.6em; }
+  #buyNow {  }
+}
+@media screen and (max-width: 480px) {
+#hi{
+  font-family: "Portrait";
+  font-weight: 900;
+  font-size: 9em;
+  text-align: center;
+  line-height: .8em;
 
+}
+#introContent h1 {
+  /*position: relative;*/
+  text-align: center;
+  font-size: 2.3em;
+  -webkit-margin-after: 1.6em;
+  font-weight: normal;
+}
+#buyNow{
+  text-transform: uppercase;
+  font-family: "Circular";
+  font-weight: 500;
+  font-size: 2em;
+  color: #bd4dd4;
+  letter-spacing: .2em;
+  background-color: white;
+  padding: 9px 29px;
+  border: none;
+  text-align: center;
+}
+}
 
 font-family: 'Montserrat', sans-serif;
 font-family: 'Noticia Text', serif;
