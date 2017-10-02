@@ -161,10 +161,14 @@ nav ul li {
   position: relative;
   height: 100vh;
   width: 100vw;
-  padding: 5vh 5vw 10vh 5vw; 
   background-color: #f8fedd;
+  padding-top: 5vh;
   z-index: 4;
   cursor: default;
+
+}
+#resume .fp-scrollable {
+  overflow: hidden;
 }
 #projects{
   float: left;
@@ -208,9 +212,6 @@ nav ul li {
 .resume ul li {
   color:#bb53d1;
 }
-#resume .fp-scrollable {
-  overflow: visible;
-}
 #downloadHere{
     font-family: "Circular";
     text-align: center;
@@ -243,7 +244,22 @@ nav ul li {
   font-family: "Circular";
   color: white;
   text-align:center;
+  width: 100vw;
+  height:100px;
+  display:table;
 }
+#contactMe {
+    margin: auto;
+    text-align: center;
+    display: table;
+    vertical-align: middle;
+
+}
+#contactMe h3 {
+
+}
+    
+ 
 .fp-auto-height.fp-section, .fp-auto-height .fp-slide, .fp-auto-height .fp-tableCell {
     height: 100px !important;
 }

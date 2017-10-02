@@ -27,8 +27,8 @@
           scrollOverflowOptions: ({
             scrollbars: false,
             bounce: true,
-          fixedElements:
-            '#resumeSection',
+          // fixedElements:
+          //   '#resumeSection',
 
 
           }),
@@ -179,7 +179,7 @@
 
     </section> -->
     <section class="section" id="resume" data-anchor="resumé">
-
+      <div style="padding: 5vh 5vw 5vh 5vw;">
       <div class="row">
 <!--       <div class="resume col-md-6 col-md-offset-3">
         <h2>About Me</h2>
@@ -240,14 +240,17 @@
         </div>
       
       </div>
-
+      </div>
+      <div id="footer">
+          <div id="contactMe"><h3><a href="#hello">Contact Me</a></h3></div>
+      </div>
 
     </section>
-    <section id="footer" class="section fp-auto-height">
+<!--     <section id="footer" class="section fp-auto-height">
       <div>
         <h2 id="contactMe"><a href="#hello">Contact Me</a></h2>
       </div>
-    </section>
+    </section> -->
   </div>
     <script src="/js/jquery.backgroundMove.js"></script>
     <script src="/js/svg.js"></script>
