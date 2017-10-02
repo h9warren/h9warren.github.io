@@ -271,7 +271,8 @@
             $('.Modal-content').css('opacity', 1);
             $('#thankYou').css('display','none');
             $('#emailForm').css('display','inline');
-            $('.closeModal').css('opacity', 1);
+            $('#closeModal').css('display', 'inline');
+            $('#myModal').css('background-color', 'rgba(0, 0, 0, 0.4)');
             setTimeout(function() {
               container.className = "MainContainer is-blurred";
               modal.className = "Modal";
