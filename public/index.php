@@ -266,6 +266,7 @@
         // Open the modal
         btnOpen.onclick = function() {
             modal.className = "Modal is-visuallyHidden";
+            $('nav').css('display','none');
             $("#emailForm")[0].reset();
             $('.Modal-content').css('opacity', 1);
             $('#thankYou').css('display','none');
@@ -281,6 +282,7 @@
         // Close the modal
         btnClose.onclick = function() {
             modal.className = "Modal is-hidden is-visuallyHidden";
+            $('nav').css('display','inline');
             body.className = "";
             container.className = "MainContainer";
             container.parentElement.className = "";
@@ -289,6 +291,7 @@
         // When the user clicks anywhere outside of the modal, close it
         window.onclick = function(event) {
             if (event.target == modal) {
+                $('nav').css('display','inline');
                 modal.className = "Modal is-hidden";
                 body.className = "";
                 container.className = "MainContainer";
@@ -322,7 +325,8 @@
               $('#myModal').css('background-color', 'rgba(0, 0, 0, 0.0)');         
               $('.Modal-content').animate({
                 'opacity':0
-              },300)       
+              },300);
+              $('nav').css('display','inline');     
                    
               setTimeout(function() {
               var modal = document.getElementById('myModal');
