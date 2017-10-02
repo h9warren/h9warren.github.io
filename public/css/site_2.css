@@ -101,7 +101,7 @@ nav ul li {
 #hi{
   font-family: "Portrait";
   font-weight: 900;
-  font-size: 14em;
+  font-size: 12em;
   text-align: center;
   line-height: .8em;
 
@@ -364,37 +364,25 @@ nav ul li {
   display:table;
 }
 @media screen and (max-width: 900px) {
-  #hi{ font-size: 12em; }
-  #introContent h1 { font-size: 2.6em; }
-  #buyNow {  }
+  #hi{ font-size: 9em; }
+  #introContent h1 {
+    font-size: 2.6em; 
+    width: 420px;
+    margin: 20px auto 20px auto;
+  }
+  #buyNow { 
+    font-size: 1.6em; }
 }
 @media screen and (max-width: 480px) {
-#hi{
-  font-family: "Portrait";
-  font-weight: 900;
-  font-size: 9em;
-  text-align: center;
-  line-height: .8em;
+#hi{ font-size: 7em; }
+#introContent h1 {     
+    font-size: 1.8em;
+    width: 310px;
+    margin: 20px auto 20px auto;
 
 }
-#introContent h1 {
-  /*position: relative;*/
-  text-align: center;
-  font-size: 2.3em;
-  -webkit-margin-after: 1.6em;
-  font-weight: normal;
-}
 #buyNow{
-  text-transform: uppercase;
-  font-family: "Circular";
-  font-weight: 500;
-  font-size: 2em;
-  color: #bd4dd4;
-  letter-spacing: .2em;
-  background-color: white;
-  padding: 9px 29px;
-  border: none;
-  text-align: center;
+  font-size: 1.6em;
 }
 }
 
