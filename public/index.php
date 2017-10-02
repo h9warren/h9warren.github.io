@@ -179,13 +179,8 @@
 
     </section> -->
     <section class="section" id="resume" data-anchor="resumé">
-      <div style="padding: 5vh 5vw 5vh 5vw;">
-      <div class="row">
-<!--       <div class="resume col-md-6 col-md-offset-3">
-        <h2>About Me</h2>
-        <h4>I’m a PHP / JavaScript full-stack web developer transitioning to programming after 7+ years experience as an Advertising Art Director /Designer. What excites me about programming is the potential to make people’s lives easier and better through technology, and provide them with value they never expected. Currently working on a multiple crypto-to-fiat currency converter to gain better understanding of available crypto APIs.</h4>
-      </div> -->
-      </div>
+      <div style="padding: 0vh 5vw 5vh 5vw; height:100vh">
+
       <div id="resumeSection" class="row">
         <div class="col-xs-12">
           <div id="downloadHere">

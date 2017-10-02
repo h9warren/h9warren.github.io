@@ -158,7 +158,7 @@ nav ul li {
   opacity: .6;
 }
 #resume {
-  position: relative;
+  /*position: relative;*/
   height: 100vh;
   width: 100vw;
   background-color: #f8fedd;
@@ -247,6 +247,7 @@ nav ul li {
   width: 100vw;
   height:100px;
   display:table;
+  margin-top: -30px
 }
 #contactMe {
     margin: auto;
