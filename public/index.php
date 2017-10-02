@@ -54,7 +54,6 @@
               }
             }
 
-
           }
         });
 
@@ -246,7 +245,7 @@
     </section>
     <section id="footer" class="section fp-auto-height">
       <div>
-        <h2 id="contactMe"><a>Contact Me</a></h2>
+        <h2 id="contactMe"><a href="#hello">Contact Me</a></h2>
       </div>
     </section>
   </div>
@@ -273,7 +272,7 @@
             $('.Modal-content').css('opacity', 1);
             $('#thankYou').css('display','none');
             $('#emailForm').css('display','inline');
-            $('.closeBox').css('opacity', 1);
+            $('.closeModal').css('opacity', 1);
             setTimeout(function() {
               container.className = "MainContainer is-blurred";
               modal.className = "Modal";
@@ -302,11 +301,11 @@
     <script>
       $(document).ready(function() {
 
-        $('#contactMe').onclick(function (){
-          $('nav ul li').css("color","white");
-          console.log("hello");
+        $('#contactMe').on('click', function() {
+          $("ul li a").css("color", "white");
+          $("nav").css("border-bottom", "1px solid rgba(255,255,255,.7)");
+          $('#buyNow').trigger('click');
         });
-
       });
     </script>
     <script>
