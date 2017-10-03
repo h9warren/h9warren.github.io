@@ -125,46 +125,46 @@
             
       </section>
 
-      <section class="section" id="portfolio">
+<!--       <section class="section" id="portfolio">
         <h1 style="text-align:center">COMING SOON!</h1>
-      </section>
-<!--     <section class="section fp-auto-height" id="portfolio" data-anchor="work">
+      </section> -->
+    <section class="section fp-auto-height" id="portfolio" data-anchor="work">
       <div class="container slide" id="projects">
         <div class="col-xs-11 col-sm-6 singleProject">
           <div class="icon"></div>
-          <p class="iconTitle">Globetrotter</p>
+          <!-- <p class="iconTitle">Globetrotter</p> -->
           <h2 class="projectName">Globetrotter.pro</h2>
           <p class="projectDesc">Web-based travel budgeting application</p>
         </div>
         <div class="col-xs-11 col-sm-6 singleProject">
           <div class="icon"></div>
-          <p class="iconTitle">Lorem Ipsum</p>
-          <h2 class="projectName">Lorem Ipsum</h2>
-          <p class="projectDesc"> Here's where the projects go</p>
+          <!-- <p class="iconTitle">Reddit</p> -->
+          <h2 class="projectName">Reddit.dev</h2>
+          <p class="projectDesc">Reddit clone built with Laravel</p>
         </div>
         <div class="col-xs-11 col-sm-6 singleProject">
           <div class="icon"></div>
-          <p class="iconTitle">Lorem Ipsum</p>
-          <h2 class="projectName">Lorem Ipsum</h2>
-          <p class="projectDesc"> Here's where the projects go</p>
+          <!-- <p class="iconTitle">Old Lister</p> -->
+          <h2 class="projectName">OldLister</h2>
+          <p class="projectDesc">Craigslist-like classifieds site</p>
         </div>
         <div class="col-xs-11 col-sm-6 singleProject">
           <div class="icon"></div>
-          <p class="iconTitle">Lorem Ipsum</p>
-          <h2 class="projectName">Lorem Ipsum</h2>
-          <p class="projectDesc"> Here's where the projects go</p>
+          <!-- <p class="iconTitle">National Parks</p> -->
+          <h2 class="projectName">Natl Parks Database</h2>
+          <p class="projectDesc">A database of parks built with MySQL</p>
         </div>
         <div class="col-xs-11 col-sm-6 singleProject">
           <div class="icon"></div>
-          <p class="iconTitle">Lorem Ipsum</p>
-          <h2 class="projectName">Lorem Ipsum</h2>
-          <p class="projectDesc"> Here's where the projects go</p>
+          <!-- <p class="iconTitle">Street Simon</p> -->
+          <h2 class="projectName">Street Simon</h2>
+          <p class="projectDesc">Simple Simon v. Street Fighter 2</p>
         </div>
         <div class="col-xs-11 col-sm-6 singleProject">
           <div class="icon"></div>
-          <p class="iconTitle">Lorem Ipsum</p>
-          <h2 class="projectName">Lorem Ipsum</h2>
-          <p class="projectDesc"> Here's where the projects go</p>
+          <!-- <p class="iconTitle">Calculator</p> -->
+          <h2 class="projectName">Calculator</h2>
+          <p class="projectDesc">A calculator built with JavaScript</p>
         </div>
 
       	<div id="globetrotter" class="slide">Globetrotter</div>
@@ -177,7 +177,7 @@
       </div>
 
 
-    </section> -->
+    </section>
     <section class="section" id="resume" data-anchor="resumé">
       <div style="padding: 0vh 5vw 5vh 5vw; height:100vh">
 
@@ -248,7 +248,7 @@
     </section> -->
   </div>
     <script src="/js/jquery.backgroundMove.js"></script>
-    <script src="/js/svg.js"></script>
+    <script src="/js/site.js"></script>
     <script>
               // Get the modal
         var modal = document.getElementById('myModal');
