@@ -111,7 +111,7 @@
               <textarea name="query" id="query" placeholder="Enter your message here"></textarea>
               </div>
               <br>
-              <input type="submit" value="Submit">
+              <button type="submit">Submit</button>
               </form>
               </div>
 
@@ -294,7 +294,9 @@
         <div class="col-xs-12">
           <div id="downloadHere">
             <h2>Download full resumé here:</h2>
-            <button class="resumeButton">Download</button>
+            <form method="get" action="file/Hunter_Warren_Resumé.pdf">
+            	<button type="submit" class="resumeButton">Download</button>
+            </form>
           </div>
         </div>
         <div class="resume col-md-4 col-xs-12">
