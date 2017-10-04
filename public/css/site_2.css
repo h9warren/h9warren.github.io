@@ -116,7 +116,7 @@ nav ul li {
 #buyNow{
   text-transform: uppercase;
   font-family: "Circular";
-  font-weight: 500;
+  font-weight: 300;
   font-size: 2em;
   color: #bd4dd4;
   letter-spacing: .2em;
@@ -124,6 +124,14 @@ nav ul li {
   padding: 9px 29px;
   border: none;
   text-align: center;
+  border-radius: 45px;
+  transition: all .2s ease-out;
+}
+#buyNow:focus, #buyNow:active, #buyNow:hover{
+  background-color: #ffdcef;
+  transform: scale(.98);
+  -moz-transform: scale(.98);
+  -webkit-transform: scale(.98);
 }
 
 #portfolio {
@@ -145,13 +153,13 @@ nav ul li {
   height: 220px;
   width: 190px; 
   margin: 0 auto 20px auto;
-  transition: all .2s ease-out;
+  transition: all .15s ease-out;
 }
 .icon:hover, .icon:active, .icon:focus {
-  transform: scale(.9);
-  -moz-transform: scale(.9);
-  -webkit-transform: scale(.9);
-  opacity: .7;
+  transform: scale(.95);
+  -moz-transform: scale(.95);
+  -webkit-transform: scale(.95);
+  opacity: .2;
 }
 
 #portfolio .iconTitle {
@@ -247,8 +255,6 @@ nav ul li {
   list-style-type: circle;
 }
 .resumeButton {
-    height: 3em;
-    width: 13em;
     background-color: #bb53d1;
     border: none;
     border-radius: 2em;
@@ -256,7 +262,15 @@ nav ul li {
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: .08em;
+    transition: all .1s ease-out;
+    padding: 8px 26px;
 }
+.resumeButton:active, .resumeButton:focus, .resumeButton:hover {
+  background-color: #b41ed5;
+  transform: scale(.95);
+  -moz-transform: scale(.95);
+  -webkit-transform: scale(.95);
+  }
 #footer {
   background-color: #bb53d1;
   font-family: "Circular";
@@ -272,6 +286,7 @@ nav ul li {
     text-align: center;
     display: table;
     vertical-align: middle;
+    transition: all .15s ease-out;
 
 }
 #contactMe h3 {
@@ -420,6 +435,7 @@ nav ul li {
   margin-left: 20px;
 
 }
+
 
 
 @media screen and (max-width: 1300px) {

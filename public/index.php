@@ -179,7 +179,6 @@
       					<li><a href=""></a></li>
       				</ul>
   				</div>
-      				
   			</div>
   			<div class="row">
   				<div class="col-xs-12">
@@ -189,11 +188,101 @@
   			</div>      		
       	</div>
 
-      	<div class="slide" data-anchor="slide2">Reddit.dev</div>
-      	<div class="slide" data-anchor="slide3">OldLister</div>
-      	<div class="slide" data-anchor="slide4">National Parks</div>
-      	<div class="slide" data-anchor="slide5">Street Simon</div>
-      	<div class="slide" data-anchor="slide6">Calculator</div>
+      	<div class="container slide" data-anchor="slide2">
+  			<div class="row slideTopBar">
+  				<div class="col-sm-4 col-sm-offset-4 col-xs-12">
+  					<h2 class="slideTitle">Reddit.dev</h2>
+      			</div>
+      			<div class="col-sm-2 col-sm-offset-2 col-xs-12">
+      				<ul class="slideLink">
+      					<li><a href=""></a></li>
+      					<li><a href=""></a></li>
+      				</ul>
+  				</div>
+  			</div>
+  			<div class="row">
+  				<div class="col-xs-12">
+  					<div class="siteImage"></div>
+  					<h4 class="description"></h4>
+				</div>
+  			</div>
+      	</div>
+      	<div class="container slide" data-anchor="slide3">
+  			<div class="row slideTopBar">
+  				<div class="col-sm-4 col-sm-offset-4 col-xs-12">
+  					<h2 class="slideTitle">OldLister</h2>
+      			</div>
+      			<div class="col-sm-2 col-sm-offset-2 col-xs-12">
+      				<ul class="slideLink">
+      					<li><a href=""></a></li>
+      					<li><a href=""></a></li>
+      				</ul>
+  				</div>
+  			</div>
+  			<div class="row">
+  				<div class="col-xs-12">
+  					<div class="siteImage"></div>
+  					<h4 class="description"></h4>
+				</div>
+  			</div>      		
+      	</div>
+      	<div class="container slide" data-anchor="slide4">
+  			<div class="row slideTopBar">
+  				<div class="col-sm-4 col-sm-offset-4 col-xs-12">
+  					<h2 class="slideTitle">National Parks</h2>
+      			</div>
+      			<div class="col-sm-2 col-sm-offset-2 col-xs-12">
+      				<ul class="slideLink">
+      					<li><a href=""></a></li>
+      					<li><a href=""></a></li>
+      				</ul>
+  				</div>
+  			</div>
+  			<div class="row">
+  				<div class="col-xs-12">
+  					<div class="siteImage"></div>
+  					<h4 class="description"></h4>
+				</div>
+  			</div>      		
+      	</div>
+      	<div class="container slide" data-anchor="slide5">
+  			<div class="row slideTopBar">
+  				<div class="col-sm-4 col-sm-offset-4 col-xs-12">
+  					<h2 class="slideTitle">Street Simon</h2>
+      			</div>
+      			<div class="col-sm-2 col-sm-offset-2 col-xs-12">
+      				<ul class="slideLink">
+      					<li><a href=""></a></li>
+      					<li><a href=""></a></li>
+      				</ul>
+  				</div>
+  			</div>
+  			<div class="row">
+  				<div class="col-xs-12">
+  					<div class="siteImage"></div>
+  					<h4 class="description"></h4>
+				</div>
+  			</div>      		
+      	</div>
+      	<div class="container slide" data-anchor="slide6">
+  			<div class="row slideTopBar">
+  				<div class="col-sm-4 col-sm-offset-4 col-xs-12">
+  					<h2 class="slideTitle">Calculator</h2>
+      			</div>
+      			<div class="col-sm-2 col-sm-offset-2 col-xs-12">
+      				<ul class="slideLink">
+      					<li><a href=""></a></li>
+      					<li><a href=""></a></li>
+      				</ul>
+  				</div>
+  			</div>
+  			<div class="row">
+  				<div class="col-xs-12">
+  					<div class="siteImage"></div>
+  					<h4 class="description"></h4>
+				</div>
+  			</div>      		
+      	</div>
 
 
 
