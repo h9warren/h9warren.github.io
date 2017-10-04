@@ -131,50 +131,70 @@
     <section class="section fp-auto-height" id="portfolio" data-anchor="work">
       <div class="container slide" id="projects">
         <div class="col-xs-11 col-sm-6 singleProject">
-          <div class="icon"></div>
+          <a href="#work/slide1"><div class="icon"></div></a>
           <!-- <p class="iconTitle">Globetrotter</p> -->
           <h2 class="projectName">Globetrotter.pro</h2>
-          <p class="projectDesc">Web-based travel budgeting application</p>
+          <!-- <p class="projectDesc">Web-based travel budgeting application</p> -->
         </div>
         <div class="col-xs-11 col-sm-6 singleProject">
-          <div class="icon"></div>
+          <a href="#work/slide2"><div class="icon"></div></a>
           <!-- <p class="iconTitle">Reddit</p> -->
           <h2 class="projectName">Reddit.dev</h2>
-          <p class="projectDesc">Reddit clone built with Laravel</p>
+          <!-- <p class="projectDesc">Reddit clone built with Laravel</p> -->
         </div>
         <div class="col-xs-11 col-sm-6 singleProject">
-          <div class="icon"></div>
+          <a href="#work/slide3"><div class="icon"></div></a>
           <!-- <p class="iconTitle">Old Lister</p> -->
           <h2 class="projectName">OldLister</h2>
-          <p class="projectDesc">Craigslist-like classifieds site</p>
+          <!-- <p class="projectDesc">Craigslist-like classifieds site</p> -->
         </div>
         <div class="col-xs-11 col-sm-6 singleProject">
-          <div class="icon"></div>
+          <a href="#work/slide4"><div class="icon"></div></a>
           <!-- <p class="iconTitle">National Parks</p> -->
           <h2 class="projectName">Natl Parks Database</h2>
-          <p class="projectDesc">A database of parks built with MySQL</p>
+          <!-- <p class="projectDesc">A database of parks built with MySQL</p> -->
         </div>
         <div class="col-xs-11 col-sm-6 singleProject">
-          <div class="icon"></div>
+          <a href="#work/slide5"><div class="icon"></div></a>
           <!-- <p class="iconTitle">Street Simon</p> -->
           <h2 class="projectName">Street Simon</h2>
-          <p class="projectDesc">Simple Simon v. Street Fighter 2</p>
+          <!-- <p class="projectDesc">Simple Simon v. Street Fighter 2</p> -->
         </div>
         <div class="col-xs-11 col-sm-6 singleProject">
-          <div class="icon"></div>
+          <a href="#work/slide6"><div class="icon"></div></a>
           <!-- <p class="iconTitle">Calculator</p> -->
           <h2 class="projectName">Calculator</h2>
-          <p class="projectDesc">A calculator built with JavaScript</p>
+          <!-- <p class="projectDesc">A calculator built with JavaScript</p> -->
         </div>
-
-      	<div id="globetrotter" class="slide">Globetrotter</div>
-      	<div class="slide">Reddit.dev</div>
-      	<div class="slide">OldLister</div>
-      	<div class="slide"> Project 4 </div>
-      	<div class="slide"> Project 5 </div>
-      	<div class="slide"> Project 6 </div>
-
       </div>
+
+      	<div class="container slide" data-anchor="slide1">
+  			<div class="row slideTopBar">
+  				<div class="col-sm-4 col-sm-offset-4 col-xs-12">
+  					<h2 class="slideTitle">Globetrotter</h2>
+      			</div>
+      			<div class="col-sm-2 col-sm-offset-2 col-xs-12">
+      				<ul class="slideLink">
+      					<li><a href=""></a></li>
+      					<li><a href=""></a></li>
+      				</ul>
+  				</div>
+      				
+  			</div>
+  			<div class="row">
+  				<div class="col-xs-12">
+  					<div class="siteImage"></div>
+  					<h4 class="description"></h4>
+				</div>
+  			</div>      		
+      	</div>
+
+      	<div class="slide" data-anchor="slide2">Reddit.dev</div>
+      	<div class="slide" data-anchor="slide3">OldLister</div>
+      	<div class="slide" data-anchor="slide4">National Parks</div>
+      	<div class="slide" data-anchor="slide5">Street Simon</div>
+      	<div class="slide" data-anchor="slide6">Calculator</div>
+
 
 
     </section>

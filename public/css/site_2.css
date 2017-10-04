@@ -134,16 +134,26 @@ nav ul li {
   width: 100vw;
   padding: 2vh 5vw 5vh 5vw;
   background-color: #bd4dd4;
-  cursor: url(/img/hand2.gif), auto;
+  /*cursor: url(/img/hand2.gif), auto;*/
 
 }
+#portfolio a {
+  /*cursor: url(/img/hand2.gif), auto;*/
+}
+
 .icon {
   height: 220px;
   width: 190px; 
   margin: 0 auto 20px auto;
-
-
+  transition: all .2s ease-out;
 }
+.icon:hover, .icon:active, .icon:focus {
+  transform: scale(.9);
+  -moz-transform: scale(.9);
+  -webkit-transform: scale(.9);
+  opacity: .7;
+}
+
 #portfolio .iconTitle {
   font-weight: 300;
   position: relative;
@@ -370,7 +380,57 @@ nav ul li {
   text-align:center;
   display:table;
 }
+.slideTopBar {
+  height:100px;
 
+}
+.slideTopBar h2 {
+  text-align:center;
+  margin-top:30px;
+}
+.siteImage {
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-position-y: top;
+  /*background-size: 90%;*/
+  background-position-x: center;
+}
+.slideLink {
+  display: inline;
+  float:right;
+  list-style-type: none;
+  text-align: center;
+  margin-top: 30px;
+  padding: 0px;
+}
+.slideLink li:first-child {
+  background-image: url(../img/link/github.png);
+  background-size: 28px 28px;
+  height: 28px;
+  width: 28px;
+  /* display: inline-block; */
+  float: left;
+}
+.slideLink li:nth-child(2) {
+  background-image: url(../img/link/link.png);
+  background-size: 28px 28px;
+  height: 28px;
+  width: 28px;
+  float: right;
+  margin-left: 20px;
+
+}
+
+
+@media screen and (max-width: 1300px) {
+  .siteImage {
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-position-y: top;
+  background-size: 90%;
+  background-position-x: center;
+}
+}
 
 
 
@@ -389,10 +449,48 @@ nav ul li {
   letter-spacing: .1em;
   font-size: 1.6em;
 }
-
+.icon {
+  height: 180px;
+  width: 155px; 
+  margin: 0 auto 20px auto;
+  background-size: 155px 180px;
+}
+.siteImage {
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-position-y: top;
+  background-size: 90%;
+  background-position-x: center;
 }
 
 
+}
+
+@media screen and (max-width: 768px) {
+  .slideLink {
+    display: table;
+    list-style-type: none;
+    margin: 20px auto;
+    padding: 0px;
+    position: relative;
+    float:none;
+}
+.slideLink li:first-child {
+    background-image: url(../img/link/github.png);
+    background-size: 28px 28px;
+    height: 28px;
+    width: 28px;
+    display: inline-block;
+}
+.slideLink li:nth-child(2) {
+    background-image: url(../img/link/link.png);
+    background-size: 28px 28px;
+    height: 28px;
+    width: 28px;
+    margin-left: 20px;
+    display: inline-block;
+}
+}
 
 
 @media screen and (max-width: 480px) {
