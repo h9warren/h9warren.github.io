@@ -87,7 +87,7 @@
         <div id="backgroundPhoto" class="MainContainer">
           <div id="introContent">
             <div id="hi">Hello!</div>
-              <h1>I’m front-end developer, Hunter Warren.</h1>
+              <h1>I’m Hunter Warren, front-end developer.</h1>
               <button id="buyNow">Buy Now</button>
           </div>
         </div>
