@@ -22,14 +22,14 @@
  $(".siteImage").eq(5).css('background-image','url(../img/screens/calc.jpg)');
 
 //project descriptions
-$('.description').eq(0).html('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.');
+$('.description').eq(0).html('A mobile-responsive app for travel budgeting, built as a group project at Codeup. Built with Laravel, we used PHP to call an API with cost data from 30,000 locations. User budgets are built with a jQuery and JavaScript ‘wizard’ and stored in a MySQL database.');
 
-$('.description').eq(1).html('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.');
+$('.description').eq(1).html('Using a Laravel framework, we built an analogue to the famous ‘front page of the internet’ that usesMySQL to store user info, votes and content, and PHP to allow voting, ranking, and posting.');
 
-$('.description').eq(2).html('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.');
+$('.description').eq(2).html('Using vanilla PHP, MySQL, HTML and custom CSS, we created an online community/ classfieds website that allows account holders to buy and sell goods, while allowing anyone to browse what’s for sale.');
 
-$('.description').eq(3).html('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.');
+$('.description').eq(3).html('Built a site using PHP, MySQL, CSS, and HTML that allows users to add, edit and delete their favorite national parks.');
 
-$('.description').eq(4).html('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.');
+$('.description').eq(4).html('Worked with a classmate to build a Simple Simon game influenced by Street Fighter 2. Uses JavaScript, jQuery, and CSS with custom animation and sound.');
 
-$('.description').eq(5).html('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.');
+$('.description').eq(5).html('Created using JavaScript, custom CSS, and HTML. Allows for negative and decimal numbers, and accounts for order of operation.');

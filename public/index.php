@@ -183,8 +183,10 @@
   			<div class="row">
   				<div class="col-xs-12">
   					<div class="siteImage"></div>
-  					<h4 class="description"></h4>
 				</div>
+					<div class="col-xs-10 col-xs-offset-1">
+  					<h4 class="description"></h4>
+  					</div>
   			</div>      		
       	</div>
 
@@ -203,7 +205,9 @@
   			<div class="row">
   				<div class="col-xs-12">
   					<div class="siteImage"></div>
+					<div class="col-xs-10 col-xs-offset-1">
   					<h4 class="description"></h4>
+  					</div>
 				</div>
   			</div>
       	</div>
@@ -222,7 +226,9 @@
   			<div class="row">
   				<div class="col-xs-12">
   					<div class="siteImage"></div>
+					<div class="col-xs-10 col-xs-offset-1">
   					<h4 class="description"></h4>
+  					</div>
 				</div>
   			</div>      		
       	</div>
@@ -241,7 +247,9 @@
   			<div class="row">
   				<div class="col-xs-12">
   					<div class="siteImage"></div>
+					<div class="col-xs-10 col-xs-offset-1">
   					<h4 class="description"></h4>
+  					</div>
 				</div>
   			</div>      		
       	</div>
@@ -260,7 +268,9 @@
   			<div class="row">
   				<div class="col-xs-12">
   					<div class="siteImage"></div>
+					<div class="col-xs-10 col-xs-offset-1">
   					<h4 class="description"></h4>
+  					</div>
 				</div>
   			</div>      		
       	</div>
@@ -279,7 +289,9 @@
   			<div class="row">
   				<div class="col-xs-12">
   					<div class="siteImage"></div>
+					<div class="col-xs-10 col-xs-offset-1">
   					<h4 class="description"></h4>
+  					</div>
 				</div>
   			</div>      		
       	</div>
