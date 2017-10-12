@@ -10,7 +10,14 @@
 
 //assign hrefs to icon links on slides
 
-  // $('selector').attr('href','http://example.com');
+  $('.slideLink a').eq(0).attr('href','https://github.com/globetrotterbudget/site').attr('target', 'blank');
+  $('.slideLink a').eq(1).attr('href','http://globetrotter.pro').attr('target', 'blank');
+  $('.slideLink a').eq(2).attr('href','https://github.com/h9warren/Reddit.dev').attr('target', 'blank');
+  $('.slideLink a').eq(3).attr('href','http://reddit.hunterwarren.us').attr('target', 'blank');
+  $('.slideLink a').eq(4).attr('href','https://github.com/microchemglobulecore/adlister.dev').attr('target', 'blank');
+  $('.slideLink a').eq(5).attr('href','http://oldlister.hunterwarren.us').attr('target', 'blank');
+  $('.slideLink a').eq(6).attr('href','https://github.com/h9warren/Reddit.dev').attr('target', 'blank');
+  $('.slideLink a').eq(7).attr('href','http://reddit.hunterwarren.us').attr('target', 'blank');
 
 //assign images to slides
 

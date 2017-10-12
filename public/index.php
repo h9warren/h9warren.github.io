@@ -175,8 +175,8 @@
       			</div>
       			<div class="col-sm-2 col-sm-offset-2 col-xs-12">
       				<ul class="slideLink">
-      					<li><a href=""></a></li>
-      					<li><a href=""></a></li>
+                <a href=""><li></li></a>
+                <a href=""><li></li></a>
       				</ul>
   				</div>
   			</div>
@@ -197,8 +197,8 @@
       			</div>
       			<div class="col-sm-2 col-sm-offset-2 col-xs-12">
       				<ul class="slideLink">
-      					<li><a href=""></a></li>
-      					<li><a href=""></a></li>
+                <a href=""><li></li></a>
+      					<a href=""><li></li></a>
       				</ul>
   				</div>
   			</div>
@@ -218,8 +218,8 @@
       			</div>
       			<div class="col-sm-2 col-sm-offset-2 col-xs-12">
       				<ul class="slideLink">
-      					<li><a href=""></a></li>
-      					<li><a href=""></a></li>
+                <a href=""><li></li></a>
+                <a href=""><li></li></a>
       				</ul>
   				</div>
   			</div>
@@ -239,8 +239,8 @@
       			</div>
       			<div class="col-sm-2 col-sm-offset-2 col-xs-12">
       				<ul class="slideLink">
-      					<li><a href=""></a></li>
-      					<li><a href=""></a></li>
+                <a href=""><li></li></a>
+                <a href=""><li></li></a>
       				</ul>
   				</div>
   			</div>
@@ -260,8 +260,8 @@
       			</div>
       			<div class="col-sm-2 col-sm-offset-2 col-xs-12">
       				<ul class="slideLink">
-      					<li><a href=""></a></li>
-      					<li><a href=""></a></li>
+                <a href=""><li></li></a>
+                <a href=""><li></li></a>
       				</ul>
   				</div>
   			</div>
@@ -281,8 +281,8 @@
       			</div>
       			<div class="col-sm-2 col-sm-offset-2 col-xs-12">
       				<ul class="slideLink">
-      					<li><a href=""></a></li>
-      					<li><a href=""></a></li>
+                <a href=""><li></li></a>
+                <a href=""><li></li></a>
       				</ul>
   				</div>
   			</div>
