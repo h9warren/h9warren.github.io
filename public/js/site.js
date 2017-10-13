@@ -16,8 +16,12 @@
   $('.slideLink a').eq(3).attr('href','http://reddit.hunterwarren.us').attr('target', 'blank');
   $('.slideLink a').eq(4).attr('href','https://github.com/microchemglobulecore/adlister.dev').attr('target', 'blank');
   $('.slideLink a').eq(5).attr('href','http://oldlister.hunterwarren.us').attr('target', 'blank');
-  $('.slideLink a').eq(6).attr('href','https://github.com/h9warren/Reddit.dev').attr('target', 'blank');
-  $('.slideLink a').eq(7).attr('href','http://reddit.hunterwarren.us').attr('target', 'blank');
+  $('.slideLink a').eq(6).attr().attr();
+  $('.slideLink a').eq(7).attr().attr();
+  $('.slideLink a').eq(8).attr().attr();
+  $('.slideLink a').eq(9).attr().attr();
+  $('.slideLink a').eq(10).attr('href','https://github.com/h9warren/calc.dev').attr('target', 'blank');
+  $('.slideLink a').eq(11).attr('href','http://calc.hunterwarren.us/calculator.html').attr('target', 'blank');
 
 //assign images to slides
 
