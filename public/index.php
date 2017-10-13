@@ -306,9 +306,8 @@
         <div class="col-xs-12">
           <div id="downloadHere">
             <h2>Download full resumé here:</h2>
-            <form method="get" action="file/Hunter_Warren_Resumé.pdf">
-            	<button type="submit" class="resumeButton">Download</button>
-            </form>
+            <a href="file/Hunter_Warren_Resumé.pdf" download><button type="submit" class="resumeButton">Download</button></a>
+            
           </div>
         </div>
         <div class="resume col-md-4 col-xs-12">
