@@ -16,10 +16,10 @@
   $('.slideLink a').eq(3).attr('href','http://reddit.hunterwarren.us').attr('target', 'blank');
   $('.slideLink a').eq(4).attr('href','https://github.com/microchemglobulecore/adlister.dev').attr('target', 'blank');
   $('.slideLink a').eq(5).attr('href','http://oldlister.hunterwarren.us').attr('target', 'blank');
-  $('.slideLink a').eq(6).attr().attr();
-  $('.slideLink a').eq(7).attr().attr();
-  $('.slideLink a').eq(8).attr().attr();
-  $('.slideLink a').eq(9).attr().attr();
+  // $('.slideLink a').eq(6).attr().attr();
+  // $('.slideLink a').eq(7).attr().attr();
+  // $('.slideLink a').eq(8).attr().attr();
+  // $('.slideLink a').eq(9).attr().attr();
   $('.slideLink a').eq(10).attr('href','https://github.com/h9warren/calc.dev').attr('target', 'blank');
   $('.slideLink a').eq(11).attr('href','http://calc.hunterwarren.us/calculator.html').attr('target', 'blank');
 
@@ -29,7 +29,7 @@
  $(".siteImage").eq(1).css('background-image','url(../img/screens/reddit.jpg)');
  $(".siteImage").eq(2).css('background-image','url(../img/screens/oldlister.jpg)');
  $(".siteImage").eq(3).css('background-image','url(../img/screens/comingsoon.png)');
- $(".siteImage").eq(4).css('background-image','url(../img/screens/streetsimon.jpg)');
+ $(".siteImage").eq(4).css('background-image','url(../img/screens/comingsoon.png)');
  $(".siteImage").eq(5).css('background-image','url(../img/screens/calc.jpg)');
 
 //project descriptions
