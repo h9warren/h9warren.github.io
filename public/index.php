@@ -150,18 +150,12 @@
         </div>
         <div class="col-xs-11 col-sm-6 singleProject">
           <a href="#work/slide4"><div class="icon"></div></a>
-          <!-- <p class="iconTitle">National Parks</p> -->
-          <h2 class="projectName">Natl Parks Database</h2>
-          <!-- <p class="projectDesc">A database of parks built with MySQL</p> -->
-        </div>
-        <div class="col-xs-11 col-sm-6 singleProject">
-          <a href="#work/slide5"><div class="icon"></div></a>
           <!-- <p class="iconTitle">Street Simon</p> -->
           <h2 class="projectName">Street Simon</h2>
           <!-- <p class="projectDesc">Simple Simon v. Street Fighter 2</p> -->
         </div>
         <div class="col-xs-11 col-sm-6 singleProject">
-          <a href="#work/slide6"><div class="icon"></div></a>
+          <a href="#work/slide5"><div class="icon"></div></a>
           <!-- <p class="iconTitle">Calculator</p> -->
           <h2 class="projectName">Calculator</h2>
           <!-- <p class="projectDesc">A calculator built with JavaScript</p> -->
@@ -235,27 +229,6 @@
       	<div class="container slide" data-anchor="slide4">
   			<div class="row slideTopBar">
   				<div class="col-sm-4 col-sm-offset-4 col-xs-12">
-  					<h2 class="slideTitle">National Parks</h2>
-      			</div>
-      			<div class="col-sm-2 col-sm-offset-2 col-xs-12">
-      				<ul class="slideLink">
-                <a href=""><li></li></a>
-                <a href=""><li></li></a>
-      				</ul>
-  				</div>
-  			</div>
-  			<div class="row">
-  				<div class="col-xs-12">
-  					<div class="siteImage"></div>
-					<div class="col-xs-10 col-xs-offset-1">
-  					<h4 class="description"></h4>
-  					</div>
-				</div>
-  			</div>      		
-      	</div>
-      	<div class="container slide" data-anchor="slide5">
-  			<div class="row slideTopBar">
-  				<div class="col-sm-4 col-sm-offset-4 col-xs-12">
   					<h2 class="slideTitle">Street Simon</h2>
       			</div>
       			<div class="col-sm-2 col-sm-offset-2 col-xs-12">
@@ -274,7 +247,7 @@
 				</div>
   			</div>      		
       	</div>
-      	<div class="container slide" data-anchor="slide6">
+      	<div class="container slide" data-anchor="slide5">
   			<div class="row slideTopBar">
   				<div class="col-sm-4 col-sm-offset-4 col-xs-12">
   					<h2 class="slideTitle">Calculator</h2>
