@@ -87,7 +87,7 @@
         <div id="backgroundPhoto" class="MainContainer">
           <div id="introContent">
             <div id="hi">Hello!</div>
-              <h1>I’m Hunter Warren, front-end developer.</h1>
+              <h1>I’m Hunter Warren, full-stack developer.</h1>
               <button id="buyNow">Buy Now</button>
           </div>
         </div>
@@ -150,18 +150,12 @@
         </div>
         <div class="col-xs-11 col-sm-6 singleProject">
           <a href="#work/slide4"><div class="icon"></div></a>
-          <!-- <p class="iconTitle">National Parks</p> -->
-          <h2 class="projectName">Natl Parks Database</h2>
-          <!-- <p class="projectDesc">A database of parks built with MySQL</p> -->
-        </div>
-        <div class="col-xs-11 col-sm-6 singleProject">
-          <a href="#work/slide5"><div class="icon"></div></a>
           <!-- <p class="iconTitle">Street Simon</p> -->
           <h2 class="projectName">Street Simon</h2>
           <!-- <p class="projectDesc">Simple Simon v. Street Fighter 2</p> -->
         </div>
         <div class="col-xs-11 col-sm-6 singleProject">
-          <a href="#work/slide6"><div class="icon"></div></a>
+          <a href="#work/slide5"><div class="icon"></div></a>
           <!-- <p class="iconTitle">Calculator</p> -->
           <h2 class="projectName">Calculator</h2>
           <!-- <p class="projectDesc">A calculator built with JavaScript</p> -->
@@ -175,8 +169,8 @@
       			</div>
       			<div class="col-sm-2 col-sm-offset-2 col-xs-12">
       				<ul class="slideLink">
-      					<li><a href=""></a></li>
-      					<li><a href=""></a></li>
+                <a href=""><li></li></a>
+                <a href=""><li></li></a>
       				</ul>
   				</div>
   			</div>
@@ -197,8 +191,8 @@
       			</div>
       			<div class="col-sm-2 col-sm-offset-2 col-xs-12">
       				<ul class="slideLink">
-      					<li><a href=""></a></li>
-      					<li><a href=""></a></li>
+                <a href=""><li></li></a>
+      					<a href=""><li></li></a>
       				</ul>
   				</div>
   			</div>
@@ -218,8 +212,8 @@
       			</div>
       			<div class="col-sm-2 col-sm-offset-2 col-xs-12">
       				<ul class="slideLink">
-      					<li><a href=""></a></li>
-      					<li><a href=""></a></li>
+                <a href=""><li></li></a>
+                <a href=""><li></li></a>
       				</ul>
   				</div>
   			</div>
@@ -235,12 +229,12 @@
       	<div class="container slide" data-anchor="slide4">
   			<div class="row slideTopBar">
   				<div class="col-sm-4 col-sm-offset-4 col-xs-12">
-  					<h2 class="slideTitle">National Parks</h2>
+  					<h2 class="slideTitle">Street Simon</h2>
       			</div>
       			<div class="col-sm-2 col-sm-offset-2 col-xs-12">
       				<ul class="slideLink">
-      					<li><a href=""></a></li>
-      					<li><a href=""></a></li>
+                <a href=""><li></li></a>
+                <a href=""><li></li></a>
       				</ul>
   				</div>
   			</div>
@@ -256,33 +250,12 @@
       	<div class="container slide" data-anchor="slide5">
   			<div class="row slideTopBar">
   				<div class="col-sm-4 col-sm-offset-4 col-xs-12">
-  					<h2 class="slideTitle">Street Simon</h2>
-      			</div>
-      			<div class="col-sm-2 col-sm-offset-2 col-xs-12">
-      				<ul class="slideLink">
-      					<li><a href=""></a></li>
-      					<li><a href=""></a></li>
-      				</ul>
-  				</div>
-  			</div>
-  			<div class="row">
-  				<div class="col-xs-12">
-  					<div class="siteImage"></div>
-					<div class="col-xs-10 col-xs-offset-1">
-  					<h4 class="description"></h4>
-  					</div>
-				</div>
-  			</div>      		
-      	</div>
-      	<div class="container slide" data-anchor="slide6">
-  			<div class="row slideTopBar">
-  				<div class="col-sm-4 col-sm-offset-4 col-xs-12">
   					<h2 class="slideTitle">Calculator</h2>
       			</div>
       			<div class="col-sm-2 col-sm-offset-2 col-xs-12">
       				<ul class="slideLink">
-      					<li><a href=""></a></li>
-      					<li><a href=""></a></li>
+                <a href=""><li></li></a>
+                <a href=""><li></li></a>
       				</ul>
   				</div>
   			</div>
@@ -306,19 +279,25 @@
         <div class="col-xs-12">
           <div id="downloadHere">
             <h2>Download full resumé here:</h2>
-            <form method="get" action="file/Hunter_Warren_Resumé.pdf">
-            	<button type="submit" class="resumeButton">Download</button>
-            </form>
+            <a href="file/Hunter_Warren_Resumé.pdf" download><button type="submit" class="resumeButton">Download</button></a>
+            
           </div>
         </div>
         <div class="resume col-md-4 col-xs-12">
-          <h3>Education</h3>
-          <p>June-September 2017</p>
-          <h5>Codeup</h5>
-          <p>Completed 16-week software development immersive in San Antonio, consisting of  536+ hours of curriculum covering full-stack web development and associated technologies. Built various programming projects alone and in teams.</p>
-          <p>2007-2010</p>
-          <h5>Texas State University</h5>
-          <p>San Marcos, TX. BFA Communication Design.</p>
+          <h3>Previous Experience</h3>
+          <p>2017-2014</p>
+          <h5>Art Director at DDB New York</h5>
+          <p>Digital, Social, Video and 360 advertising campaign work for Clean & Clear, State Farm, Frigidaire, Electrolux, Lipton, Breyers, Exxon Mobil, and Royal Canin. Also responsible for digital content creation / content optimization.
+          </p>
+          <p>2014-2012</p>
+          <h5>Interactive Designer at DDB New York</h5>
+          <p>Design work and UI /UX on mobile and desktop sites, and digital ads for: Frigidaire, Electrolux, State Farm, Reebok, USTA, RoC Skin Care, Aveeno, Lipton. Worked with developers to guide translation from design into digital product.
+          </p>
+          <p>2012-2011</p>
+          <h5>Graphic Designer at Imagemme, Inc.</h5>
+          <p>Created logos, identity work, websites, UI/UX, packaging, digital work and print materials.
+          Additional duties: customer contact/relations, print/materials sourcing, creating mockups, on-site installations, and press checks.
+          </p>
         </div>
         <div class="resume col-md-4 col-xs-12">
           <h3 style="margin-bottom:.5em">Skills</h3>
@@ -341,20 +320,13 @@
           </ul>
         </div>
         <div class="resume col-md-4 col-xs-12">
-          <h3>Previous Experience</h3>
-          <p>2017-2014</p>
-          <h5>Art Director at DDB New York</h5>
-          <p>Digital, Social, Video and 360 advertising campaign work for Clean & Clear, State Farm, Frigidaire, Electrolux, Lipton, Breyers, Exxon Mobil, and Royal Canin. Also responsible for digital content creation / content optimization.
-          </p>
-          <p>2014-2012</p>
-          <h5>Interactive Designer at DDB New York</h5>
-          <p>Design work and UI /UX on mobile and desktop sites, and digital ads for: Frigidaire, Electrolux, State Farm, Reebok, USTA, RoC Skin Care, Aveeno, Lipton. Worked with developers to guide translation from design into digital product.
-          </p>
-          <p>2012-2011</p>
-          <h5>Graphic Designer at Imagemme, Inc.</h5>
-          <p>Created logos, identity work, websites, UI/UX, packaging, digital work and print materials.
-          Additional duties: customer contact/relations, print/materials sourcing, creating mockups, on-site installations, and press checks.
-          </p>
+          <h3>Education</h3>
+          <p>June-September 2017</p>
+          <h5>Codeup</h5>
+          <p>Completed 16-week software development immersive in San Antonio, consisting of  536+ hours of curriculum covering full-stack web development and associated technologies. Built various programming projects alone and in teams.</p>
+          <p>2007-2010</p>
+          <h5>Texas State University</h5>
+          <p>San Marcos, TX. BFA Communication Design.</p>
         </div>
       
       </div>

@@ -301,7 +301,7 @@ nav ul li {
   position: fixed;
   left: 0;
   top: 0;
-  z-index: 9999;
+  z-index: 20;
   width: 100%;
   height: 100%;
   padding-top: 100px;
@@ -437,7 +437,7 @@ nav ul li {
   margin-top: 30px;
   padding: 0px;
 }
-.slideLink li:first-child {
+.slideLink a:first-child li {
   background-image: url(../img/link/github.png);
   background-size: 28px 28px;
   height: 28px;
@@ -445,7 +445,7 @@ nav ul li {
   /* display: inline-block; */
   float: left;
 }
-.slideLink li:nth-child(2) {
+.slideLink a:nth-child(2) li {
   background-image: url(../img/link/link.png);
   background-size: 28px 28px;
   height: 28px;
@@ -453,6 +453,11 @@ nav ul li {
   float: right;
   margin-left: 20px;
 
+}
+.slideLink a li {
+  height:28px;
+  width:28px;
+  
 }
 .description {
   text-align:center;
