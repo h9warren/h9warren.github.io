@@ -462,6 +462,11 @@ nav ul li {
 .description {
   text-align:center;
 }
+.siteImage a {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
 
 
 

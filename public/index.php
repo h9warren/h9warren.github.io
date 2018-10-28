@@ -176,7 +176,9 @@
   			</div>
   			<div class="row">
   				<div class="col-xs-12">
-  					<div class="siteImage"></div>
+  					<div class="siteImage">
+              <a href="http://globetrotter.pro"></a>
+            </div>
 				</div>
 					<div class="col-xs-10 col-xs-offset-1">
   					<h4 class="description"></h4>
@@ -198,7 +200,9 @@
   			</div>
   			<div class="row">
   				<div class="col-xs-12">
-  					<div class="siteImage"></div>
+  					<div class="siteImage">
+              <a href="http://reddit.hunterwarren.codes"></a>   
+            </div>
 					<div class="col-xs-10 col-xs-offset-1">
   					<h4 class="description"></h4>
   					</div>
@@ -219,7 +223,9 @@
   			</div>
   			<div class="row">
   				<div class="col-xs-12">
-  					<div class="siteImage"></div>
+  					<div class="siteImage">
+              <a href="http://oldlister.hunterwarren.codes"></a>     
+            </div>
 					<div class="col-xs-10 col-xs-offset-1">
   					<h4 class="description"></h4>
   					</div>
@@ -240,7 +246,9 @@
   			</div>
   			<div class="row">
   				<div class="col-xs-12">
-  					<div class="siteImage"></div>
+  					<div class="siteImage">
+              <a href="http://simon.hunterwarren.codes"></a>
+            </div>
 					<div class="col-xs-10 col-xs-offset-1">
   					<h4 class="description"></h4>
   					</div>
