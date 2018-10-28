@@ -261,7 +261,9 @@
   			</div>
   			<div class="row">
   				<div class="col-xs-12">
-  					<!-- <div class="siteImage"></div> -->
+  					<div class="siteImage">
+              <a href="http://calc.hunterwarren.codes/calculator.html"></a>     
+            </div>
 					<div class="col-xs-10 col-xs-offset-1">
   					<h4 class="description"></h4>
   					</div>
