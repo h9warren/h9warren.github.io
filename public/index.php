@@ -296,6 +296,10 @@
         <div class="resume col-md-4 col-xs-12">
           <h3>Previous Experience</h3>
           <p>2017-2014</p>
+          <h5>Front-End Developer at USAA</h5>
+          <p>Worked within the Chief Design Office on a team of Front-End Developers of wide-ranging expertise to build pages for USAA’s digital storefront. Most pages involve a significant degree of custom HTML, CSS & JS, as our team’s storefront pages can’t use frameworks or rely on external libraries. QA’d designs with their respective designers and project stakeholders, and with Accessibility Ops team. Uploaded all page code into Tridion CMS, and additionally, maintained CSS for other teams within Tridion. Contributed to a library of components used by our storefront FED’s to faciliate rapid development of pages.
+          </p>
+          <p>2017-2014</p>
           <h5>Art Director at DDB New York</h5>
           <p>Digital, Social, Video and 360 advertising campaign work for Clean & Clear, State Farm, Frigidaire, Electrolux, Lipton, Breyers, Exxon Mobil, and Royal Canin. Also responsible for digital content creation / content optimization.
           </p>
@@ -303,20 +307,15 @@
           <h5>Interactive Designer at DDB New York</h5>
           <p>Design work and UI /UX on mobile and desktop sites, and digital ads for: Frigidaire, Electrolux, State Farm, Reebok, USTA, RoC Skin Care, Aveeno, Lipton. Worked with developers to guide translation from design into digital product.
           </p>
-          <p>2012-2011</p>
-          <h5>Graphic Designer at Imagemme, Inc.</h5>
-          <p>Created logos, identity work, websites, UI/UX, packaging, digital work and print materials.
-          Additional duties: customer contact/relations, print/materials sourcing, creating mockups, on-site installations, and press checks.
-          </p>
         </div>
         <div class="resume col-md-4 col-xs-12">
           <h3 style="margin-bottom:.5em">Skills</h3>
           <h5>Programming</h5>
           <ul><li>PHP / Laravel</li>
-              <li>MySQL</li>
-              <li>JavaScript / jQuery  / AJAX</li>
-              <li>Custom CSS / Bootstrap</li>
-              <li>HTML</li>
+              <li>Java</li>
+              <li>MySQL, Git</li>
+              <li>ES6 / React</li>
+              <li>HTML, CSS, JS</li>
           </ul>
           <h5>Software</h5>
           <ul><li>Photoshop, Illustrator, inDesign, After Effects, Premiere, Audition</li>
