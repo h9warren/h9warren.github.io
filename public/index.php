@@ -289,7 +289,7 @@
         <div class="col-xs-12">
           <div id="downloadHere">
             <h2>Download full resumé here:</h2>
-            <a href="file/Hunter_Warren_Resumé.pdf" download><button type="submit" class="resumeButton">Download</button></a>
+            <a href="file/resume.pdf" download><button type="submit" class="resumeButton">Download</button></a>
             
           </div>
         </div>
