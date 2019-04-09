@@ -294,10 +294,10 @@
           </div>
         </div>
         <div class="resume col-md-4 col-xs-12">
-          <h3>Previous Experience</h3>
-          <p>2017-2014</p>
+          <h3>Experience</h3>
+          <p>current-2017</p>
           <h5>Front-End Developer at USAA</h5>
-          <p>Worked within the Chief Design Office on a team of Front-End Developers of wide-ranging expertise to build pages for USAA’s digital storefront. Most pages involve a significant degree of custom HTML, CSS & JS, as our team’s storefront pages can’t use frameworks or rely on external libraries. QA’d designs with their respective designers and project stakeholders, and with Accessibility Ops team. Uploaded all page code into Tridion CMS, and additionally, maintained CSS for other teams within Tridion. Contributed to a library of components used by our storefront FED’s to faciliate rapid development of pages.
+          <p>Work within the Chief Design Office on a team of Front-End Developers of wide-ranging expertise to build pages for USAA’s digital storefront. Most pages involve a significant degree of custom HTML, CSS & JS, as our team’s storefront pages can’t use frameworks or rely on external libraries. QA designs with their respective designers and project stakeholders, and with Accessibility Ops team. Upload all page code into Tridion CMS, and maintain CSS for other teams within Tridion. Contribute to a library of components used by our storefront FED’s to faciliate rapid development of pages. Over the past 6 months, have been using Node, NPM, SCSS, and scripting to more quickly develop pages.
           </p>
           <p>2017-2014</p>
           <h5>Art Director at DDB New York</h5>
@@ -311,11 +311,11 @@
         <div class="resume col-md-4 col-xs-12">
           <h3 style="margin-bottom:.5em">Skills</h3>
           <h5>Programming</h5>
-          <ul><li>PHP / Laravel</li>
-              <li>Java</li>
+          <ul><li>JS / CSS / SCSS / HTML</li>
+              <li>React / Redux / ES6</li>
+              <li>Java, PHP</li>
               <li>MySQL, Git</li>
-              <li>ES6 / React</li>
-              <li>HTML, CSS, JS</li>
+              <li>Node, NPM, Bash</li>
           </ul>
           <h5>Software</h5>
           <ul><li>Photoshop, Illustrator, inDesign, After Effects, Premiere, Audition</li>
