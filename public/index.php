@@ -294,7 +294,7 @@
           </div>
         </div>
         <div class="resume col-md-4 col-xs-12">
-          <h3>Previous Experience</h3>
+          <h3>Experience</h3>
           <p>Current-2017</p>
           <h5>Front-End Developer at USAA</h5>
           <p>Work within the Chief Design Office on a team of Front-End Developers of wide-ranging expertise to build pages for USAA’s digital storefront. Most pages involve a significant degree of custom HTML, CSS & JS, as our team’s storefront pages can’t use frameworks or rely on external libraries. QA designs with their respective designers and project stakeholders, and with Accessibility Ops team. Upload all page code into Tridion CMS, and maintain CSS for other teams within Tridion. Contribute to a library of components used by our storefront FED’s to faciliate rapid development of pages. Over the past 6 months, have been using Node, NPM, SCSS, and scripting to more quickly develop pages.
